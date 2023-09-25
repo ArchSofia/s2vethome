@@ -1,0 +1,148 @@
+.navbar{
+    background-color: rgb(189, 193, 198);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2rem; */
+    padding: 32px 47px 32px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-name{
+  display: flex;
+  flex-direction: column;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.logo-title{
+  cursor: pointer;
+  color:var(--violet);
+  font-family: 'GothamRoundedBold';
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.welcome-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome-info h4{
+  color:whitesmoke;
+}
+
+.menu-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    color:whitesmoke;
+}
+
+.menu-list li:hover{
+    color: whitesmoke;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.icon-close{
+    display: none;
+}
+
+.icon-bars{
+    display: none;
+}
+
+li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'Montserrat-VariableFont_wght';
+  font-size: 1.2rem;
+}
+
+hr {
+  background-color: var(--violet); /* Removes the background color */
+  border: none; /* Removes the default border */
+  height: 4px; /* Adjust the height as needed */
+  border-radius: 5px;
+}
+
+
+li a:hover{
+  color:rgb(143, 43, 106);
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(189, 193,198);
+    padding: 10px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: -300px;
+    width: 100%;
+    background-color: rgba(172, 173, 175);
+    color: #3a3838;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar.desktop-version-menu{
+    display: none;
+  }
+  
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-list li{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+  }
+
+  .sidebar-list li:hover{
+    color: white;
+    cursor: pointer;
+  }
+  
+
+  .icon-close{
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .icon-close:hover{
+    cursor: pointer;
+  }
+
+  .icon-bars{
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+

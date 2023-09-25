@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'GothamRoundedBook';
+    src: url('./static/fonts/GothamRoundedBook.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothamRoundedBold';
+    src: url('./static/fonts/GothamRoundedBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Italic-VariableFont_wght';
+    src: url('./static/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-VariableFont_wght';
+    src: url('./static/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+* {
+    font-family: 'GothamRoundedBook';
+}
+

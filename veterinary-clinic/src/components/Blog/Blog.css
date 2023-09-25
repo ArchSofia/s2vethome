@@ -1,0 +1,514 @@
+.ctn-blog{
+   background-color: #e5e8eb;
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+}
+
+
+.blog-section h1{
+    color: #2F2E3E;
+    text-align: center;
+}
+
+.blog-img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blog-add-data{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.blog-input{
+    width: 75%;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    box-shadow: rgba(102, 6, 205, 0.24) 0px 3px 8px;
+}
+
+.blog-button{
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-button:hover{
+    opacity: 0.8;
+}
+
+.link-img-mail{
+    position: relative;
+    top: -9.5rem;   
+    left: -23.15rem;
+}
+
+.link-img-instagram{
+    position: relative;
+    top: -12.9rem;   
+    left: -18.7rem;
+}
+
+input {
+    appearance: none;
+    border: none;
+    outline: none;
+    background:none;
+    cursor: initial;
+    padding: 1rem;
+    max-width: 40rem;}
+
+.name-inputt{
+    position: relative;
+    left: 2rem;
+    top: -13rem;
+}
+
+.email-inputt{
+    position: relative;
+    left: 2rem;
+    top: -10.4rem;
+}
+
+.phone-inputt{
+    position: relative;
+    left: 2rem;
+    top: -7.5rem;
+}
+
+.message-inputt{
+    position: relative;
+    left: 3rem;
+    top: -4.9rem;
+}
+
+.contact-form-1 {
+   justify-content: center;
+    align-self: stretch;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 4rem;
+    width: 100%;
+  }
+
+.contact-form-3 {
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid;
+    border-color: #e5f4f2;;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 60px;
+    padding: 60px;
+    position: relative;
+  }
+
+  .header-form {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    width: 100%;
+  }
+
+  .headline-subhead-5 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  .comunicate-con-nosotros-1 {
+    align-self: stretch;
+    color: var(--onboarding-background-grey);
+    font-weight: 700;
+    line-height: 49.4px;
+    margin-top: -1.00px;
+    position: relative;
+    white-space: nowrap;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.76px;
+        text-wrap: wrap;
+      }
+  
+      .tenes-alguna-duda-s-1 {
+        align-self: stretch;
+        color: var(--onboarding-background-grey);
+        font-weight: 400;
+        line-height: 24px;
+        position: relative;
+        white-space: nowrap;
+        text-wrap: wrap;
+        width: 68%;
+      }
+
+      .sector-1-contacto{
+        align-items: flex-start;
+        flex-direction: column;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 40px;
+        position: relative;
+        width: 465px;
+        justify-content: space-between;
+      }
+
+      .sector-1-contacto-a{
+        align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+      }
+
+      .sector-1-contacto-a-telefono,
+      .sector-1-contacto-a-email {
+        align-items: center;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 12px;
+        position: relative;
+        width: 465px;
+      }
+ 
+.icono-telefono,
+.envelope-simple-5 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.text-5-1{
+  color: var(--onboarding-background-grey);
+  flex: 1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.sector-1-contacto-b{
+    flex-direction: column;
+    flex: none;
+    align-items: flex-start;
+    gap: 20px;
+    display: inline-flex;
+    position: relative;
+}
+
+.conectate-con-nosotros{
+    font-size: 21px;
+    letter-spacing: 0;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--onboarding-background-grey);
+    white-space: nowrap;
+    width: 465px;
+    margin-top: -1px;
+    font-weight: 600;
+    line-height: 27.3px;
+    position: relative;
+}
+
+.social-links-1{
+    flex: none;
+    align-items: center;
+    gap: 16px;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icons-1 {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.input-fields-button {
+    flex-direction: column;
+    flex: none;
+    align-items: flex-start;
+    gap: 20px;
+    margin-right: -505px;
+    display: inline-flex;
+    position: relative;
+}
+
+.input-fields {
+    flex-direction: column;
+    flex: none;
+    align-items: flex-start;
+    gap: 10px;
+    width: 465px;
+    display: flex;
+    position: relative;
+}
+
+
+.input-fields-button {
+    flex-direction: column;
+    flex: none;
+    align-items: flex-start;
+    gap: 20px;
+    margin-right: -505px;
+    display: inline-flex;
+    position: relative;
+}
+
+
+.input-field-2, .input-field-3 {
+    background-color: white;
+    border: 1px solid;
+    border-color: #d7d7d7;
+    border-radius: 20px;
+    align-self: stretch;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: 60px;
+    padding: 8px 20px;
+    display: flex;
+    position: relative;
+}
+
+.input-field-4 {
+    background-color: white;
+    border: 1px solid;
+    border-color: #d7d7d7;
+    border-radius: 20px;
+    align-self: stretch;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    height: 148px;
+    padding: 8px 20px;
+    display: flex;
+    position: relative;
+}
+
+.caja-sectores-1-y-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.send {
+    width: 19px;
+    height: 19px;
+    position: relative;
+}
+
+.mensaje-1 {
+    color: var(--onboarding-background-grey);
+    white-space: nowrap;
+    background-color: #0000;
+    border: 0;
+    flex: 1;
+    margin-top: -1px;
+    padding-left: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+}
+
+.button-4, .button-5 {
+    background-color: #831742;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 60px;
+    padding: 16px 50px;
+    transition: all .3s;
+    display: inline-flex;
+    position: relative;
+}
+
+@media screen and (max-width: 1125px){
+    .input-fields-button, .input-fields{
+        width: 350px;
+    }
+
+    .sector-1-contacto, 
+    .sector-1-contacto-a-telefono, 
+    .sector-1-contacto-a-email,
+    .sector-1-contacto-a, 
+    .sector-1-contacto-b, 
+    .conectate-con-nosotros{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .caja-sectores-1-y-2{
+        display: flex;
+        flex-direction: column;
+        }
+}
+
+@media screen and (max-width: 580px){
+    .input-fields, 
+    .input-fields-button, 
+    .sector-2-input,
+    .caja-sectores-1-y-2,
+    .sector-1-contacto-b,
+    .sector-1-contacto,
+    .conectate-con-nosotros,
+    .sector-1-contacto-a-email,
+    .sector-1-contacto-a-telefono,
+    .sector-1-contacto-a,
+    .text-5-1{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 435px){
+
+    .contact-form-1 { 
+    padding:30px;   
+    } 
+
+    .input-fields-button, .input-fields{
+        width: 300px;
+    }
+
+    .sector-1-contacto, 
+    .sector-1-contacto-a-telefono, 
+    .sector-1-contacto-a-email,
+    .sector-1-contacto-a, 
+    .sector-1-contacto-b, 
+    .conectate-con-nosotros{
+        width: 300px;
+    }
+
+    .caja-sectores-1-y-2{
+    display: flex;
+    flex-direction: column;
+    }
+
+    input {
+    min-width: 200px;
+    }
+
+    .comunicate-con-nosotros-1 {
+        align-self: stretch;
+        font-family: 'GothamRoundedBold', Helvetica;
+        font-weight: 700;
+        line-height: 49.4px;
+        margin-top: -1.00px;
+        position: relative;
+        white-space: nowrap;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: -0.76px;
+            text-wrap: wrap;
+            width: 230px;
+          }
+
+          .conectate-con-nosotros{
+            font-size: 21px;
+            letter-spacing: 0;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--onboarding-background-grey);
+            white-space: nowrap;
+            width: 320px;
+            margin-top: -1px;
+            font-weight: 600;
+            line-height: 27.3px;
+            position: relative;
+            text-wrap: wrap;
+            width: 320px;
+          }
+
+          .contact-form-3 {
+            align-items: flex-start;
+            background-color: white;
+            border: 1px solid;
+            border-color: #e5f4f2;
+            border-radius: 20px;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 60px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .input-field-4 {
+            width: 70%;
+        }
+
+        .input-field-2, .input-field-3 {
+            width: 70%;
+        }
+}
+
+@media screen and (max-width: 392px){
+    .input-fields, 
+    .input-fields-button, 
+    .sector-2-input,
+    /* .caja-sectores-1-y-2, */
+    .sector-1-contacto-b,
+    .sector-1-contacto,
+    .conectate-con-nosotros,
+    .sector-1-contacto-a-email,
+    .sector-1-contacto-a-telefono,
+    .sector-1-contacto-a,
+    .text-5-1{
+        width: 50%;
+    }
+
+    input{
+        width: 150px;
+    }
+
+    .contact-form-3{
+        padding: 1.5rem;
+    }
+
+    .caja-sectores-1-y-2, .input-field-2, .input-field-4 {
+        width: 180px;
+        gap: 0;
+        padding: 0.8rem;
+    }
+
+    .comunicate-con-nosotros-1 {
+        font-size: 1.5rem;
+        width: 180px;
+    }
+}

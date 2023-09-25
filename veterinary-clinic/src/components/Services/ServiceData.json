@@ -1,0 +1,33 @@
+
+[
+    {
+        "url": "/src/assets/radiologia.png",
+        "title": "Radiología",
+        "description": "Imagen por rayos X para diagnóstico de patologías y lesiones"
+    },
+    {
+        "url": "/src/assets/ecografia.png",
+        "title": "Ecografía",
+        "description": "Diagnóstico de imágenes para visualizar los órganos y tejidos"
+    },
+    {
+        "url": "/src/assets/uci.png",
+        "title": "Unidad de cuidados intensivos",
+        "description": "Internación y tratamiento"
+    },
+    {
+        "url": "/src/assets/cirugia.png",
+        "title": "Cirugía",
+        "description": "Cirugías ambulatorias con los mejores profesionales"
+    },
+    {
+        "url": "/src/assets/peluqueria.png",
+        "title": "Peluquería",
+        "description": "Servicios de peluquería y baño para tus mascotas"
+    },
+    {
+        "url": "/src/assets/especialidades.png",
+        "title": "Especialidades",
+        "description": "Contamos con profesionales especializados"
+    }
+]

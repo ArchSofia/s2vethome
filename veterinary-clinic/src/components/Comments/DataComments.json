@@ -1,0 +1,14 @@
+[
+    {
+        "image": "/src/assets/photovev.png",
+        "message": "Encuentro la mejor atención en VetHome y tengo todo en un mismo lugar: alimentos, baño y corte y atención 24hs de veterinarios en un solo lugar",
+        "name": "Vevis V.",
+        "info": "Dueña de Kibbi"
+    },
+    {
+        "image": "/src/assets/photosilver.png",
+        "message": "Quiero agradecer a todo el equipo. Tuve que castar a mi gato Limón y salió de la cirugía sin ningún dolor. Hicimos un control semanas después y no pudo haber salido mejor",
+        "name": "Silver N.",
+        "info": "Dueño de Limón"
+    }
+]
