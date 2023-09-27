@@ -1,0 +1,267 @@
+.ctn-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: calc(100vh - 117.8px);
+    min-height: 961px;
+    background-color: rgba(124, 199, 202, 0.4);
+}
+
+.register-title{
+    font-size: 1.5rem;
+    color: rgb(80, 78, 78);
+}
+
+h2{
+    text-align: start;
+    color: rgb(80, 78, 78);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ctn-register p{
+    text-align: center;
+}
+
+form{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.box-user-pets{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.user, .pets{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-register{
+    width: 85%;
+    height: 320px;
+    background-color: rgba(224, 228, 230, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.inputs-fullname{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.ctn-pet{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-form-pets{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 160px;
+    justify-content: space-evenly;
+}
+
+article{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.register-name, .register-lastname, .register-email, .register-passcode, .register-address, .register-phone{
+    width: 45%;
+    height: 12%;
+}
+
+.register-pet-section{
+    width: 100%;
+    height: 12%;
+}
+
+.input-register-name, .input-register-lastname, .input-register-email, .input-register-passcode, .input-register-phone, .input-register-address{
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    padding: 0.8rem;
+}
+
+.input-pet, select{
+    border-radius: 6px;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+input, select{
+    background-color: #E9FAFC;
+}
+
+.register-button, .pets-button{
+    padding: 0.6rem;
+    background-color: #1BA0AB;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 150px;
+}
+
+
+.error-message-div{
+    margin-bottom: 2rem;
+    background-color: white;
+    color: red;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.error-message-div p{
+    width: 75%;
+}
+
+.error-icon{
+    font-size: 1.6rem;
+}
+
+.petsArray{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.delete-pet{
+    color: rgb(90, 155, 149, 0.6);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.added-pet{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: 110px;
+    font-size: 0.8rem;
+    background-color: rgba(115, 139, 139, 0.2);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .register-title{
+        width: 80%;
+        text-align: center;
+    }
+
+    .error-message-div{
+        width: 55%;
+    }
+
+    .error-message-div p{
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 810px){
+    .ctn-register{
+        justify-content: space-evenly;
+        min-height: 1100px;
+    }
+
+    .register-description-title{
+        width: 85%;
+    }
+
+    article{
+        flex-direction: column;
+    }
+
+    .box-user-pets{
+        flex-direction: column;
+    }
+
+    .user, .pets{
+        width: 95%;
+        height: 45%;
+    }
+
+    .form-register{
+        width: 100%;
+    }
+
+    .register-button{
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .error-message-div{
+        width: 60%;
+    }
+
+    .error-message-div p{
+        width: 75%;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+@media screen and (max-width: 420px){
+    .register-title{
+        width: 70%;
+        text-align: center;
+    }
+
+    .error-message-div{
+        width: 80%;
+
+    }
+
+    .error-message-div p{
+        font-size: 0.8rem;
+        width: 70%;
+    }
+}
