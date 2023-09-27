@@ -62,11 +62,11 @@ const Login = () => {
 		<>
 			<Navbar />
 			<div className="container-login-form">
-				<div className="icon-direction">
+				{/* <div className="icon-direction">
 					<IoMdArrowRoundBack className="arrow" onClick={goBack} />
-				</div>
+				</div> */}
 				<div className="ctn-login">
-					<h1 className="login-title">Iniciá sesión</h1>
+					{/* <h1 className="login-title">Iniciá sesión</h1> */}
 					{error && (
 						<div className="error-container">
 							<MdOutlineError className="icon-error" />
@@ -74,7 +74,8 @@ const Login = () => {
 						</div>
 					)}
 					<form className="form-login">
-						<div className="form-input">
+						<h1>Inicia sesión </h1>
+						{/* <div className="form-input">
 							<input
 								className="email-input"
 								type="email"
@@ -83,7 +84,23 @@ const Login = () => {
 								onChange={(e) => setEmail(e.target.value)}
 								required
 							></input>
+						</div> */}
+						<div className="input-field-2">
+							<div className="icon-3-1 icon-3">
+								<img className="user-1" src="src/assets/envelopesimple-1.svg" />
+								<div className="divider-1"></div>
+							</div>
+							<input
+								className="full-name body-m"
+								placeholder="Email"
+								type="email"
+								name="email"
+								required
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
+							/>
 						</div>
+
 						<div className="form-input">
 							<input
 								className="password-input"
@@ -103,7 +120,7 @@ const Login = () => {
 							</span>
 						</div>
 						<button className="login-button" onClick={handleLoginUser}>
-							Iniciar sesión
+							Ingresar
 						</button>
 						<div className="reset-sign">
 							<p className="reset">¡Olvidé mi contraseña!</p>
