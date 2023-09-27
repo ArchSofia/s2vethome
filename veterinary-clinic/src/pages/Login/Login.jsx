@@ -94,7 +94,7 @@ const Login = () => {
 
 						<div className="input-field-2">
 							<div className="icon-3-1 icon-3">
-								<img className="user-1" src="src/assets/envelopesimple-1.svg" />
+								<img className="user-1" src="src/assets/lock.svg" />
 								<div className="divider-1"></div>
 							</div>
 							<input
@@ -120,9 +120,9 @@ const Login = () => {
 							Ingresar
 						</button>
 						<div className="reset-sign">
-							<p className="reset">¡Olvidé mi contraseña!</p>
+							<p className="reset">¿No tienes cuenta?</p>
 							<p className="sign-in">
-								<Link to="/register">Registrarme</Link>
+								<Link to="/register">Registrate</Link>
 							</p>
 						</div>
 					</form>

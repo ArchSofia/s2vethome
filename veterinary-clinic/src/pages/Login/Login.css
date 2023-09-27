@@ -12,7 +12,7 @@
 
 .login-title{
     
-    margin-bottom: 2rem;
+    /* margin-bottom: 1rem; */
     color: rgb(80, 78, 78);
     height: 49px;
     width: 451px;
@@ -44,7 +44,7 @@
 .form-login{
     /* width: 28%; */
     width: 500px;
-    height: 450px;
+    height: auto;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     display: flex;
@@ -52,7 +52,8 @@
     align-items: center;
     justify-content: space-evenly;
     background-color:rgb(255, 255, 255);
-    padding: 60px;
+    padding: 50px;
+    gap: 40px;
 }
 
 .form-input{
@@ -76,21 +77,33 @@
     border-radius: 0px 5px 5px 0px;
     float: right;
     position: relative;
-    right: 1rem;
+    right: -7rem;
     top: 16%;
     z-index: 5;
     cursor: pointer;
 }
 
 .login-button{
-    padding: 0.6rem;
+    
     background-color:rgba(131, 23, 66, 1);
     color: white;
-    font-weight: 700;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 60px;
+    padding: 16px 50px;
+    align-items: center;
+    display: inline-flex;
+    gap: 8px;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-family: "Poppins", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+    width: 375px;
 }
 
 .reset-sign{
@@ -109,7 +122,7 @@
 .sign-in a{
     font-size: 0.8rem;
     cursor: pointer;
-    color:#1BA0AB;
+    color:rgba(131, 23, 66, 1);
     font-weight: 700;
     text-decoration: none;
 }
