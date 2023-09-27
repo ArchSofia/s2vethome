@@ -124,9 +124,9 @@ article{
     width: 100%;
 }
 
-input, select{
+/* input, select{
     background-color: #E9FAFC;
-}
+} */
 
 .register-button, .pets-button{
     padding: 0.6rem;

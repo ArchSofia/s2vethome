@@ -74,17 +74,8 @@ const Login = () => {
 						</div>
 					)}
 					<form className="form-login">
-						<h1>Inicia sesión </h1>
-						{/* <div className="form-input">
-							<input
-								className="email-input"
-								type="email"
-								value={email}
-								placeholder="usuario@email.com"
-								onChange={(e) => setEmail(e.target.value)}
-								required
-							></input>
-						</div> */}
+						<h1 className="login-title">Inicia sesión </h1>
+
 						<div className="input-field-2">
 							<div className="icon-3-1 icon-3">
 								<img className="user-1" src="src/assets/envelopesimple-1.svg" />
@@ -101,16 +92,21 @@ const Login = () => {
 							/>
 						</div>
 
-						<div className="form-input">
+						<div className="input-field-2">
+							<div className="icon-3-1 icon-3">
+								<img className="user-1" src="src/assets/envelopesimple-1.svg" />
+								<div className="divider-1"></div>
+							</div>
 							<input
-								className="password-input"
+								className="full-name body-m"
+								placeholder="Contraseña"
 								type={showPassword ? "text" : "password"}
+								name="password"
+								required
 								value={password}
 								onChange={(e) => setPassword(e.target.value)}
-								placeholder="Contraseña"
 								id="passcode"
-								required
-							></input>
+							/>
 							<span onClick={handleIcon}>
 								{showPassword ? (
 									<AiFillEyeInvisible className="eye-icon" />
@@ -119,6 +115,7 @@ const Login = () => {
 								)}
 							</span>
 						</div>
+
 						<button className="login-button" onClick={handleLoginUser}>
 							Ingresar
 						</button>
