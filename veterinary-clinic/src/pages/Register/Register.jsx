@@ -8,6 +8,7 @@ import { useState } from "react";
 import axios from "axios";
 import { UserContext } from "../../context/UserContext";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import Footer from "../../components/Footer/Footer";
 
 const Register = () => {
 	const navigate = useNavigate();
@@ -91,9 +92,9 @@ const Register = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="icon-direction">
+			{/* <div className="icon-direction">
 				<IoMdArrowRoundBack className="arrow" onClick={goBack} />
-			</div>
+			</div> */}
 			<div className="ctn-register">
 				{error ? (
 					<div className="error-message-div">
@@ -103,18 +104,114 @@ const Register = () => {
 				) : (
 					""
 				)}
-				<h1 className="register-title">Crea tu cuenta</h1>
+				{/* <h1 className="register-title">Crea tu cuenta</h1>
 				<p className="register-description-title">
 					Completa un sencillo formulario, agrega a todas tus mascotas y
 					adéntrate en un mundo de amor en nuestra comunidad ♥
-				</p>
+				</p> */}
 				<form>
 					<div className="box-user-pets">
 						<div className="user">
-							<h2>Agrega tus datos</h2>
 							<div className="form-register">
+								<h1 className="login-title">Registro </h1>
 								<div className="section-form">
 									<div className="register-name">
+										<div class="input-field-2">
+											<div class="icon-3-1 icon-3">
+												<img
+													class="user-1"
+													src="src/assets/envelopesimple-1.svg"
+												/>
+												<div class="divider-1"></div>
+											</div>
+											<input
+												class="full-name body-m"
+												placeholder="Email"
+												type="email"
+												name="email"
+												required=""
+												value=""
+											/>
+										</div>
+
+										<div class="input-field-2">
+											<div class="icon-3-1 icon-3">
+												<img class="user-1" src="src/assets/user-1.svg" />
+												<div class="divider-1"></div>
+											</div>
+											<input
+												class="full-name body-m"
+												placeholder="Nombre"
+												type="nombre"
+												name="nombre"
+												required=""
+												value=""
+											/>
+										</div>
+
+										<div class="input-field-2">
+											<div class="icon-3-1 icon-3">
+												<img class="user-1" src="src/assets/user-1.svg" />
+												<div class="divider-1"></div>
+											</div>
+											<input
+												class="full-name body-m"
+												placeholder="Apellido"
+												type="apellido"
+												name="apellido"
+												required=""
+												value=""
+											/>
+										</div>
+
+										<div class="input-field-2">
+											<div class="icon-3-1 icon-3">
+												<img class="user-1" src="src/assets/phonecall.svg" />
+												<div class="divider-1"></div>
+											</div>
+											<input
+												class="full-name body-m"
+												placeholder="Telefono"
+												type="telefono"
+												name="telefono"
+												required=""
+												value=""
+											/>
+										</div>
+
+										<div class="input-field-2">
+											<div class="icon-3-1 icon-3">
+												<img
+													class="user-1"
+													src="src/assets/envelopesimple-1.svg"
+												/>
+												<div class="divider-1"></div>
+											</div>
+											<input
+												class="full-name body-m"
+												placeholder="Direccion"
+												type="direccion"
+												name="direccion"
+												required=""
+												value=""
+											/>
+										</div>
+
+										<div class="input-field-2">
+											<div class="icon-3-1 icon-3">
+												<img class="user-1" src="src/assets/lock.svg" />
+												<div class="divider-1"></div>
+											</div>
+											<input
+												class="full-name body-m"
+												placeholder="Contraseña"
+												type="contraseña"
+												name="contraseña"
+												required=""
+												value=""
+											/>
+										</div>
+
 										<input
 											className="input-register-name"
 											type="text"
@@ -188,8 +285,8 @@ const Register = () => {
 							</div>
 						</div>
 						<div className="pets">
-							<h2>Agrega los datos de tu mascota</h2>
-							<div className="form-register">
+							{/* <h2>Agrega los datos de tu mascota</h2> */}
+							{/* <div className="form-register">
 								<div className="petsArray">
 									{petsArray &&
 										petsArray.map((p, index) => {
@@ -262,7 +359,7 @@ const Register = () => {
 										Agregar
 									</button>
 								</article>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<button className="register-button" onClick={handleRegisterUser}>
@@ -270,6 +367,7 @@ const Register = () => {
 					</button>
 				</form>
 			</div>
+			<Footer />
 		</>
 	);
 };

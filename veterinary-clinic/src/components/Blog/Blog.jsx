@@ -31,29 +31,6 @@ const Blog = () => {
 			message: formData.message,
 		};
 
-		// 	const server = emailjs.server.connect({
-		// 		user: "info@vethome.com.ar", // Your Roundcube email address
-		// 		password: "vethome1234", // Your Roundcube email password
-		// 		host: "mail.vethome.com.ar", // Host for both incoming and outgoing servers
-		// 		ssl: true, // Use SSL for secure communication
-		// 	});
-
-		// 	const message = {
-		// 		from: formData.email, // Your email address
-		// 		to: "info@vethome.com.ar", // Recipient's Roundcube email address
-		// 		subject: formData.name,
-		// 		text: formData.message,
-		// 	};
-
-		// 	server.send(message, (err, message) => {
-		// 		if (err) {
-		// 			console.error("Error sending email:", err);
-		// 		} else {
-		// 			console.log("Email sent successfully:", message);
-		// 		}
-		// 	});
-		// };
-
 		emailjs
 			.send(
 				"service_lexxqx5",
@@ -72,33 +49,6 @@ const Blog = () => {
 				}
 			);
 	};
-
-	// 	emailjs
-	// 		.send(
-	// 			"service_thtyy7j",
-	// 			"template_heo8e3s",
-	// 			emailParams,
-	// 			"uEVk4n9-pqI3wEa2Q"
-	// 		)
-	// 		.then(
-	// 			(response) => {
-	// 				console.log("Email sent successfully:", response);
-	// 				alert("Form submitted successfully!");
-	// 			},
-	// 			(error) => {
-	// 				console.error("Error sending email:", error);
-	// 				alert("Form submission failed. Please try again later.");
-	// 			}
-	// 		);
-	// };
-
-	// const [name, setName] = useState("");
-	// const [email, setEmail] = useState("");
-	// const [phone, setPhone] = useState("");
-	// const [message, setMessage] = useState("");
-
-	// const [error, setError] = useState(false);
-	// const [errorMessage, setErrorMessage] = useState("");
 
 	return (
 		<form onSubmit={handleSubmit}>

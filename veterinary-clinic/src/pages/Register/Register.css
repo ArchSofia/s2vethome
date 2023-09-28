@@ -5,7 +5,7 @@
     align-items: center;
     max-height: calc(100vh - 117.8px);
     min-height: 961px;
-    background-color: rgba(124, 199, 202, 0.4);
+    background-color:#E5E8EB;
 }
 
 .register-title{
@@ -50,9 +50,9 @@ form{
 
 
 .form-register{
-    width: 85%;
-    height: 320px;
-    background-color: rgba(224, 228, 230, 0.3);
+    width: 500px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 10px;
     padding: 1.5rem;
