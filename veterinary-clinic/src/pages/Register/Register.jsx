@@ -245,7 +245,7 @@ const Register = () => {
 							</div>
 
 							<div className="primerfila">
-								<div className="register-pet-section">
+								<div className="register-pet-section primerfila">
 									<select
 										class="input-field-6"
 										value={pet.gender}
@@ -270,6 +270,12 @@ const Register = () => {
 								</div>
 							</div>
 						</div>
+						<button
+							className="login-button ingresar"
+							onClick={handleRegisterUser}
+						>
+							Registrarme
+						</button>
 					</div>
 				</form>
 			</div>
