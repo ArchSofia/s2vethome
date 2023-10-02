@@ -142,10 +142,11 @@ const Register = () => {
 											<input
 												class="full-name body-m"
 												placeholder="Nombre"
-												type="nombre"
-												name="nombre"
-												required=""
-												value=""
+												type="text"
+												name="name"
+												required
+												value={name}
+												onChange={(e) => setName(e.target.value)}
 											/>
 										</div>
 
@@ -157,10 +158,11 @@ const Register = () => {
 											<input
 												class="full-name body-m"
 												placeholder="Apellido"
-												type="apellido"
-												name="apellido"
+												type="text"
+												name="lastname"
 												required=""
-												value=""
+												value={lastname}
+												onChange={(e) => setLastname(e.target.value)}
 											/>
 										</div>
 
@@ -211,27 +213,6 @@ const Register = () => {
 												value=""
 											/>
 										</div>
-
-										<input
-											className="input-register-name"
-											type="text"
-											name="name"
-											value={name}
-											placeholder="Nombre"
-											onChange={(e) => setName(e.target.value)}
-											required
-										></input>
-									</div>
-									<div className="register-lastname">
-										<input
-											className="input-register-lastname"
-											type="text"
-											name="lastname"
-											value={lastname}
-											placeholder="Apellido"
-											onChange={(e) => setLastname(e.target.value)}
-											required
-										></input>
 									</div>
 								</div>
 								<div className="section-form">
