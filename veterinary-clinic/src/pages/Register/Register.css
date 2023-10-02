@@ -3,9 +3,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: calc(100vh - 117.8px);
+    /* max-height: calc(100vh - 117.8px); */
     min-height: 961px;
     background-color:#E5E8EB;
+    height: 1400px;
+}
+
+h1.login-title{
+    margin-bottom: 60px;
+    
+}
+
+.input-field-5 {
+    background-color: white;
+    border: 1px solid;
+    border-color: #d7d7d7;
+    border-radius: 20px;
+    align-self: stretch;
+    align-items: center;
+    gap: 12px;
+    width: 425px;
+    height: 60px;
+    padding: 8px 20px;
+    display: flex;
+    position: relative;
 }
 
 .register-title{
@@ -33,29 +54,48 @@ form{
     width: 100%;
 }
 
-.box-user-pets{
-    display: flex;
-    align-items: center;
-    width: 90%;
-    justify-content: space-evenly;
-}
-
 .user, .pets{
-    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.petssector{
+    display: flex;
+    flex-direction: column;
+    /* gap: 65px; */
+}
+
+.label {
+    height: 35px;
+    width: 466px;
+}
+
+.label .text-wrapper {
+    color: #2d2d2d;
+    font-family: "Poppins", Helvetica;
+    font-size: 27px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: -0.54px;
+    line-height: 35.1px;
+    text-align: center;
+    top: 0;
+    width: 466px;
+    margin-top: 65px;
+    padding-bottom: 65px;
+}
+
 
 .form-register{
-    width: 500px;
+    margin-top: 60px;
+    width: 571px;
     height: auto;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    border-radius: 10px;
-    padding: 1.5rem;
+    border-radius: 20px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -68,11 +108,11 @@ form{
     flex-direction: column;
 }
 
-.section-form{
+/* .section-form{
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
+   
+    
+} */
 
 .ctn-pet{
     display: flex;
@@ -103,6 +143,9 @@ article{
 .register-name, .register-lastname, .register-email, .register-passcode, .register-address, .register-phone{
     width: 45%;
     height: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .register-pet-section{
@@ -185,6 +228,28 @@ article{
     font-size: 0.8rem;
     background-color: rgba(115, 139, 139, 0.2);
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.input-field-6 {
+    background-color: white;
+    border: 1px solid;
+    border-color: #d7d7d7;
+    border-radius: 20px;
+    align-self: stretch;
+    align-items: center;
+    gap: 12px;
+    width: 180px;
+    height: 60px;
+    padding: 8px 20px;
+    display: flex;
+    position: relative;
+    margin-top: 65px;
+}
+
+.primerfila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 

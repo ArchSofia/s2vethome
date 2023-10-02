@@ -92,9 +92,7 @@ const Register = () => {
 	return (
 		<>
 			<Navbar />
-			{/* <div className="icon-direction">
-				<IoMdArrowRoundBack className="arrow" onClick={goBack} />
-			</div> */}
+
 			<div className="ctn-register">
 				{error ? (
 					<div className="error-message-div">
@@ -104,19 +102,15 @@ const Register = () => {
 				) : (
 					""
 				)}
-				{/* <h1 className="register-title">Crea tu cuenta</h1>
-				<p className="register-description-title">
-					Completa un sencillo formulario, agrega a todas tus mascotas y
-					adéntrate en un mundo de amor en nuestra comunidad ♥
-				</p> */}
+
 				<form>
-					<div className="box-user-pets">
+					<div className="form-register">
 						<div className="user">
-							<div className="form-register">
+							<div>
 								<h1 className="login-title">Registro </h1>
 								<div className="section-form">
 									<div className="register-name">
-										<div class="input-field-2">
+										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
 												<img
 													class="user-1"
@@ -129,12 +123,13 @@ const Register = () => {
 												placeholder="Email"
 												type="email"
 												name="email"
-												required=""
-												value=""
+												value={email}
+												onChange={(e) => setEmail(e.target.value)}
+												required
 											/>
 										</div>
 
-										<div class="input-field-2">
+										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
 												<img class="user-1" src="src/assets/user-1.svg" />
 												<div class="divider-1"></div>
@@ -150,7 +145,7 @@ const Register = () => {
 											/>
 										</div>
 
-										<div class="input-field-2">
+										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
 												<img class="user-1" src="src/assets/user-1.svg" />
 												<div class="divider-1"></div>
@@ -166,7 +161,7 @@ const Register = () => {
 											/>
 										</div>
 
-										<div class="input-field-2">
+										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
 												<img class="user-1" src="src/assets/phonecall.svg" />
 												<div class="divider-1"></div>
@@ -174,14 +169,15 @@ const Register = () => {
 											<input
 												class="full-name body-m"
 												placeholder="Telefono"
-												type="telefono"
-												name="telefono"
+												type="text"
+												name="phone"
 												required=""
-												value=""
+												value={phone}
+												onChange={(e) => setPhone(e.target.value)}
 											/>
 										</div>
 
-										<div class="input-field-2">
+										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
 												<img
 													class="user-1"
@@ -192,14 +188,15 @@ const Register = () => {
 											<input
 												class="full-name body-m"
 												placeholder="Direccion"
-												type="direccion"
-												name="direccion"
+												type="text"
+												name="address"
 												required=""
-												value=""
+												value={address}
+												onChange={(e) => setAddress(e.target.value)}
 											/>
 										</div>
 
-										<div class="input-field-2">
+										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
 												<img class="user-1" src="src/assets/lock.svg" />
 												<div class="divider-1"></div>
@@ -207,145 +204,73 @@ const Register = () => {
 											<input
 												class="full-name body-m"
 												placeholder="Contraseña"
-												type="contraseña"
-												name="contraseña"
+												type="password"
+												name="password"
 												required=""
-												value=""
+												value={password}
+												onChange={(e) => setPassword(e.target.value)}
 											/>
 										</div>
 									</div>
 								</div>
-								<div className="section-form">
-									<div className="register-address">
-										<input
-											className="input-register-address"
-											type="text"
-											name="address"
-											value={address}
-											placeholder="Direccion"
-											onChange={(e) => setAddress(e.target.value)}
-											required
-										></input>
-									</div>
-									<div className="register-phone">
-										<input
-											className="input-register-phone"
-											type="text"
-											name="phone"
-											value={phone}
-											placeholder="telefono"
-											onChange={(e) => setPhone(e.target.value)}
-											required
-										></input>
-									</div>
+							</div>
+						</div>
+						<div className="petssector">
+							<div className="label">
+								<p className="text-wrapper">Agregá los datos de tu mascota</p>
+							</div>
+
+							<div className="primerfila">
+								<div class="input-field-6">
+									<input
+										className="input-pet"
+										type="text"
+										name="petName"
+										value={pet.petName}
+										placeholder="Nombre"
+										onChange={inputPetsChange}
+									/>
 								</div>
-								<div className="section-form">
-									<div className="register-email">
-										<input
-											type="email"
-											className="input-register-email"
-											name="email"
-											value={email}
-											placeholder="Correo electrónico"
-											onChange={(e) => setEmail(e.target.value)}
-											required
-										></input>
-									</div>
-									<div className="register-passcode">
-										<input
-											type="password"
-											className="input-register-passcode"
-											name="password"
-											value={password}
-											placeholder="Contraseña"
-											onChange={(e) => setPassword(e.target.value)}
-											required
-										></input>
-									</div>
+
+								<div class="input-field-6">
+									<input
+										className="input-pet"
+										type="number"
+										name="age"
+										value={pet.age}
+										placeholder="Edad"
+										onChange={inputPetsChange}
+									></input>
+								</div>
+							</div>
+
+							<div className="primerfila">
+								<div className="register-pet-section">
+									<select
+										class="input-field-6"
+										value={pet.gender}
+										name="gender"
+										onChange={inputPetsChange}
+									>
+										<option value="default">Género</option>
+										<option>Masculino</option>
+										<option>Femenino</option>
+									</select>
+
+									<select
+										class="input-field-6"
+										value={pet.petSpecies}
+										name="petSpecies"
+										onChange={inputPetsChange}
+									>
+										<option value="default">Especie</option>
+										<option>Canino</option>
+										<option>Felino</option>
+									</select>
 								</div>
 							</div>
 						</div>
-						<div className="pets">
-							{/* <h2>Agrega los datos de tu mascota</h2> */}
-							{/* <div className="form-register">
-								<div className="petsArray">
-									{petsArray &&
-										petsArray.map((p, index) => {
-											return (
-												<div key={index} className="added-pet">
-													{p.petName}
-													<RiDeleteBin6Line
-														className="delete-pet"
-														onClick={() => deletePet(index)}
-													/>
-												</div>
-											);
-										})}
-								</div>
-
-								<article>
-									<div className="ctn-pet">
-										<div className="section-form-pets">
-											<div className="register-pet-section">
-												<input
-													className="input-pet"
-													type="text"
-													name="petName"
-													value={pet.petName}
-													placeholder="Nombre"
-													onChange={inputPetsChange}
-												></input>
-											</div>
-											<div className="register-pet-section">
-												<input
-													className="input-pet"
-													type="number"
-													name="age"
-													value={pet.age}
-													placeholder="Edad"
-													onChange={inputPetsChange}
-												></input>
-											</div>
-										</div>
-										<div className="section-form-pets">
-											<div className="register-pet-section">
-												<select
-													value={pet.gender}
-													name="gender"
-													onChange={inputPetsChange}
-												>
-													<option value="default">Género</option>
-													<option>Masculino</option>
-													<option>Femenino</option>
-												</select>
-											</div>
-											<div className="register-pet-section">
-												<select
-													value={pet.petSpecies}
-													name="petSpecies"
-													onChange={inputPetsChange}
-												>
-													<option value="default">Especie</option>
-													<option>Canino</option>
-													<option>Felino</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<button
-										type="button"
-										className="pets-button"
-										onClick={savingPets}
-									>
-										Agregar
-									</button>
-								</article>
-							</div> */}
-						</div>
 					</div>
-					<button className="register-button" onClick={handleRegisterUser}>
-						Crear cuenta
-					</button>
 				</form>
 			</div>
 			<Footer />
