@@ -221,7 +221,7 @@ const Register = () => {
 							</div>
 
 							<div className="primerfila">
-								<div class="input-field-6">
+								<div class="input-field-67">
 									<input
 										className="input-pet"
 										type="text"
@@ -232,7 +232,7 @@ const Register = () => {
 									/>
 								</div>
 
-								<div class="input-field-6">
+								<div class="input-field-67">
 									<input
 										className="input-pet"
 										type="number"
@@ -276,6 +276,15 @@ const Register = () => {
 						>
 							Registrarme
 						</button>
+						<div className="reset-sign inicia">
+							¿Ya tienes una cuenta? Inicia sesión.
+						</div>
+						<p>
+							<a href="/login">Inicia sesión</a>
+						</p>
+						<div className="logo-name">
+							<h1 className="logo-title logo-bottom">VET HOME</h1>
+						</div>
 					</div>
 				</form>
 			</div>
