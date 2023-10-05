@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import '../Reservation/Reservation.css'
 import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 import { useRef } from 'react'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -14,9 +15,7 @@ const Reservation = () => {
     <>
        <Navbar />
         <div className='ctn-booking'>
-            {/* <img src={catImage} className='booking-img'></img> */}
             <div className='form-data-ctn'>
-           
             <form className='booking-form' ref={form}>
                 <div className='form-title'>
                    <h1 className='title-booking-form'>Reserva de turno</h1> 
@@ -106,6 +105,7 @@ const Reservation = () => {
             
             </div>
         </div>
+        <Footer />
     </>
   )
 }
