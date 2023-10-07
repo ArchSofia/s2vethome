@@ -287,7 +287,7 @@ const Reservation = () => {
                     </select>
                     <textarea className='b-description' 
                     value={state.initialState?.dataConsulta?.motivoConsulta} 
-                    placeholder='Describa el motivo de consulta'
+                    placeholder='Describe el motivo de consulta'
                     onChange={e => handleInputChange('dataConsulta', 'motivoConsulta', e.target.value)}
                     >
                     </textarea>
