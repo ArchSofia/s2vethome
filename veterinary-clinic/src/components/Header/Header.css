@@ -88,8 +88,6 @@ a {
 .header-button, .logout-button{
     width: 170px;
     padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     border-radius: 11px;
     border: none;
     background-color: #831742;
