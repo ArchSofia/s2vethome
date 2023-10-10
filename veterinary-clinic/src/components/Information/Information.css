@@ -31,15 +31,6 @@
     text-align: start;
 }
 
-.info-button{
-    background-color: #1BA0AB;
-    padding: 0.5rem;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
-}
 
 .info-button:hover{
     opacity: 0.8;
