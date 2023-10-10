@@ -220,6 +220,18 @@ const Register = () => {
 								<p className="text-wrapper">Agregá los datos de tu mascota</p>
 							</div>
 
+							<div>
+								{
+									petsArray &&
+									petsArray.map((p, index) => {
+									  return <div key={index} className='added-pet'>
+										{p.petName}
+										<RiDeleteBin6Line className='delete-pet' onClick={() => deletePet(index)}/>
+									  </div>
+									})	
+								}
+							</div>
+
 							<div className="primerfila">
 								<div class="input-field-67">
 									<input
@@ -269,6 +281,7 @@ const Register = () => {
 									</select>
 								</div>
 							</div>
+							<button type='button' className='pets-button' onClick={savingPets}>Agregar</button>
 						</div>
 						<button
 							className="login-button ingresar"
