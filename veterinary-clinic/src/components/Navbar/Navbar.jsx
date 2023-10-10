@@ -1,12 +1,15 @@
-import React, {  useState } from "react";
+import React, {  useContext, useState } from "react";
 import "../Navbar/Navbar.css";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../../context/UserContext";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const navigate = useNavigate();
 	const [sidebarOpen, setSidebarOpen] = useState(false);
+	const {isUserLogged} = useContext(UserContext)
 
 	const goHome = () => {
 		navigate("/");
@@ -15,16 +18,15 @@ const Navbar = () => {
 	return (
 		<div className="navbar" id="home">
 			<div className="welcome-info">
-				{/* <div className="logo">
-					{ FIXME - Reemplazar por logo prolijo }
-					<img src="./public/logo.png"></img>
-				</div> */}
 				<div className="logo-name">
-					{/* <h4>Clinica veterinaria</h4> */}
 					<h1 className="logo-title" onClick={goHome}>
 						VET HOME
 					</h1>
 				</div>
+				{
+					isUserLogged ?
+					<h4>{`Hola, ${sessionStorage.getItem("name")} ${sessionStorage.getItem("lastname")}`}</h4> : ""
+				}
 			</div>
 			<div className="icon-bars" onClick={() => setSidebarOpen(true)}>
 				<FaBars />
@@ -37,6 +39,10 @@ const Navbar = () => {
 				</div>
 				<ul className={sidebarOpen ? "sidebar-list" : "menu-list"}>
 					{/* TODO - click on home te sube a inicio de la página */}
+						{
+							isUserLogged &&
+							<button className='info-button'><Link to="/reservation">Reservar una cita</Link></button>
+						}
 					<li>
 						<a href="#">Home</a>
 					</li>

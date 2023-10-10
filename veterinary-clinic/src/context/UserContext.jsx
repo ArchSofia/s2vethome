@@ -21,30 +21,29 @@ const dataUserLogged = {
     email: ""
 }
 
-// hacer el llamado de una peticion, buscar el usuario por su email y guardar la data recibida en un state:
-// entonces, en el state ya estaran los datos del usuario que ha iniciado sesion y podré acceder a ellos desde el navbar.
-
 export const UserProvider = ({children}) => {
     
-    const [dataUser, setDataUser] = useState(user); //Almacena info de usuario creado
-    const [isLogged, setIsLogged] = useState(false); //Almacena un valor true or false, indica si el usuario ha iniciado sesión o no
-    const [userLogged, setUserLogged] = useState(dataUserLogged); //Almacena info de usuario logueado
+    const [dataUser, setDataUser] = useState(user); 
+    const [isUserLogged, setIsUserLogged] = useState(
+        sessionStorage.getItem("isUserLogged") 
+    );
+    const [userLogged, setUserLogged] = useState(dataUserLogged); 
 
     const findUserByEmail = (email) => {
         axios.get(`http://localhost:8080/customer/findByEmail/${email}`)
         .then(response => {
             setUserLogged(response.data)
-        })
+            sessionStorage.setItem("name", response.data.name)
+            sessionStorage.setItem("lastname", response.data.lastName)
+        })     
     }
-    //usuario logueado datos:
-    console.log("datos de usuario logueado:", userLogged)
 
     return(
         <UserContext.Provider value={{
                                     dataUser, 
                                     setDataUser,
-                                    isLogged,
-                                    setIsLogged,
+                                    isUserLogged,
+                                    setIsUserLogged,
                                     userLogged,
                                     setUserLogged,
                                     findUserByEmail

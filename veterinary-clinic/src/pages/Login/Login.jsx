@@ -19,18 +19,12 @@ const Login = () => {
 	const [error, setError] = useState(false);
 	const [errorMessage, setErrorMessage] = useState("");
 
-	const { setIsLogged, findUserByEmail } = useContext(UserContext);
-
-	const goBack = () => {
-		navigate(-1);
-	};
+	const { setIsUserLogged, findUserByEmail } = useContext(UserContext);
 
 	const handleIcon = () => {
 		setShowPassword(!showPassword);
 	};
 
-	/* validar que el usuario haya ingresado la info en los inputs de email y username. 
-    Si los datos son válidos, el servidor devuelve un token. Sino, muestra un msj de error */
 	const handleLoginUser = (e) => {
 		e.preventDefault();
 		if (email && password) {
@@ -44,8 +38,8 @@ const Login = () => {
 					if (response.status === 200 || response.status === 201) {
 						sessionStorage.setItem("token", response.data.token);
 						sessionStorage.setItem("email", email);
-						setIsLogged(true);
-						//hacer el llamado de la funcion que busca al usuario por su email, trae toda su info y la guarda:
+						sessionStorage.setItem("isUserLogged", "true")
+						setIsUserLogged(true);
 						findUserByEmail(email);
 						navigate("/");
 					}
@@ -62,11 +56,7 @@ const Login = () => {
 		<>
 			<Navbar />
 			<div className="container-login-form">
-				{/* <div className="icon-direction">
-					<IoMdArrowRoundBack className="arrow" onClick={goBack} />
-				</div> */}
 				<div className="ctn-login">
-					{/* <h1 className="login-title">Iniciá sesión</h1> */}
 					{error && (
 						<div className="error-container">
 							<MdOutlineError className="icon-error" />

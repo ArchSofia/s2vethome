@@ -37,6 +37,8 @@ const Reservation = () => {
         id: ""
       }
     }
+
+    console.log("user data:", initialState.dataPropietario)
   
     const formBookingReducer = (state, action) => {
       switch (action.type) {
@@ -206,7 +208,7 @@ const Reservation = () => {
                     <div className='customer-names'>
                         <input className='book-input' 
                             type='text' 
-                            value={userLogged?.name}
+                            value={userLogged && userLogged?.name}
                             placeholder='Nombre'
                             >
                             </input>
@@ -220,13 +222,13 @@ const Reservation = () => {
                     <div className='customer-data'>
                         <input className='book-input' 
                             type='text' 
-                            value={userLogged?.email}
+                            value={userLogged && userLogged?.email}
                             placeholder='email'
                             >
                             </input>
                             <input className='book-input' 
                             type='number' 
-                            value={userLogged?.contactNumber}
+                            value={userLogged && userLogged?.contactNumber}
                             placeholder='Número'
                             >
                         </input>
@@ -234,7 +236,7 @@ const Reservation = () => {
                     <div className='customer-address'>
                         <input className='book-input-address' 
                             type='text' 
-                            value={userLogged?.address}
+                            value={userLogged && userLogged?.address}
                             placeholder='Dirección'
                             >
                         </input>

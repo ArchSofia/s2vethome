@@ -83,12 +83,19 @@ const Register = () => {
 						goBack();
 					}
 				})
-				.catch((error) => console.log(error));
+				.catch((error) => console.log("esta cayendo en este error",error));
 		} else {
 			setError(true);
 			setErrorRegisterMsj("Debes completar todos los campos del formulario");
 		}
 	};
+	console.log("nombre:", name)
+	console.log("apellido:", lastname)
+	console.log("email:", email)
+	console.log("address:", address)
+	console.log("telefono:", phone)
+	console.log("password:", password)
+	console.log("petsArray:", petsArray)
 	return (
 		<>
 			<Navbar />
