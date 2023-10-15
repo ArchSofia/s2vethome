@@ -182,3 +182,56 @@
     }
 }
 
+/* Tu CSS actual ... */
+
+.form-login{
+    width: 80%;
+    max-width: 500px;
+    /* ... otros estilos ... */
+}
+
+.login-button{
+    height: 3rem; 
+    width: 80%;
+    max-width: 400px;
+    /* ... otros estilos ... */
+}
+
+/* Media Queries Ajustadas */
+
+@media screen and (max-width: 768px){
+    .form-login,
+    .error-container{
+        width: 85%;
+    }
+
+    h1.login-title {
+        margin-bottom: 4px;
+    }
+
+    .login-button,
+    .error-container p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .form-login,
+    .error-container{
+        width: 90%;
+    }
+
+    h1.login-title {
+        margin-bottom: 30px;
+    }
+
+    .ctn-login {
+        height: calc(126vh - 117.8px );
+
+    }
+
+    .login-button,
+    .error-container p{
+        font-size: 0.8rem;
+    }
+}
