@@ -226,7 +226,8 @@ const Register = () => {
 							<div className="label">
 								<p className="text-wrapper">Agregá los datos de tu mascota</p>
 							</div>
-
+							<br />
+							<br />
 							<div>
 								{petsArray &&
 									petsArray.map((p, index) => {
