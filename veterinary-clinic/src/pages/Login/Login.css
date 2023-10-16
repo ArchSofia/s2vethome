@@ -33,14 +33,6 @@
     width: 100%;
 }
 
-/* .arrow{
-    font-size: 1.5rem;
-    color: #1BA0AB;
-    cursor: pointer;
-    margin-right: 0.5rem;
-    margin-bottom: 0.8rem;
-} */
-
 .form-login{
     /* width: 28%; */
     width: 500px;
@@ -84,7 +76,6 @@
 }
 
 .login-button{
-    
     background-color:rgba(131, 23, 66, 1);
     color: white;
     border: none;
@@ -152,9 +143,7 @@
 
 
 @media screen and (max-width: 768px){
-    .form-login{
-        width: 60%;
-    }
+    
 
     .error-container{
         width: 60%;
@@ -166,38 +155,6 @@
 }
 
 
-
-@media screen and (max-width: 420px){
-
-    .form-login{
-        width: 90%;
-    }
-
-    .error-container{
-        width: 80%;
-    }
-
-    .error-container p{
-        font-size: 0.8rem;
-    }
-}
-
-/* Tu CSS actual ... */
-
-.form-login{
-    width: 80%;
-    max-width: 500px;
-    /* ... otros estilos ... */
-}
-
-.login-button{
-    height: 3rem; 
-    width: 80%;
-    max-width: 400px;
-    /* ... otros estilos ... */
-}
-
-/* Media Queries Ajustadas */
 
 @media screen and (max-width: 768px){
     .form-login,
@@ -207,15 +164,24 @@
 
     h1.login-title {
         margin-bottom: 4px;
+        width: 290px;
     }
 
     .login-button,
     .error-container p{
         font-size: 0.9rem;
     }
+
+    .ctn-login {
+        height: calc(126vh - 117.8px );
+    }
+
+    .eye-icon{
+        display: none;
+     }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 425px){
     .form-login,
     .error-container{
         width: 90%;
@@ -227,11 +193,19 @@
 
     .ctn-login {
         height: calc(126vh - 117.8px );
-
     }
 
     .login-button,
     .error-container p{
         font-size: 0.8rem;
     }
+
+    .login-button{
+        width: inherit;
+    }
+
+    .eye-icon{
+       display: none;
+    }
+
 }
