@@ -175,17 +175,20 @@ article{
 } */
 
 .register-button, .pets-button{
-    padding: 0.6rem;
-    background-color: #1BA0AB;
+    padding: 1rem;
+    background-color:rgba(131, 23, 66, 1);
     color: white;
     font-weight: 700;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 150px;
 }
 
+.pets-button{
+    margin-top: 60px;
+}
 
 .error-message-div{
     margin-bottom: 2rem;

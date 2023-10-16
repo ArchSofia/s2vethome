@@ -83,19 +83,19 @@ const Register = () => {
 						goBack();
 					}
 				})
-				.catch((error) => console.log("esta cayendo en este error",error));
+				.catch((error) => console.log("esta cayendo en este error", error));
 		} else {
 			setError(true);
 			setErrorRegisterMsj("Debes completar todos los campos del formulario");
 		}
 	};
-	console.log("nombre:", name)
-	console.log("apellido:", lastname)
-	console.log("email:", email)
-	console.log("address:", address)
-	console.log("telefono:", phone)
-	console.log("password:", password)
-	console.log("petsArray:", petsArray)
+	console.log("nombre:", name);
+	console.log("apellido:", lastname);
+	console.log("email:", email);
+	console.log("address:", address);
+	console.log("telefono:", phone);
+	console.log("password:", password);
+	console.log("petsArray:", petsArray);
 	return (
 		<>
 			<Navbar />
@@ -228,15 +228,18 @@ const Register = () => {
 							</div>
 
 							<div>
-								{
-									petsArray &&
+								{petsArray &&
 									petsArray.map((p, index) => {
-									  return <div key={index} className='added-pet'>
-										{p.petName}
-										<RiDeleteBin6Line className='delete-pet' onClick={() => deletePet(index)}/>
-									  </div>
-									})	
-								}
+										return (
+											<div key={index} className="added-pet">
+												{p.petName}
+												<RiDeleteBin6Line
+													className="delete-pet"
+													onClick={() => deletePet(index)}
+												/>
+											</div>
+										);
+									})}
 							</div>
 
 							<div className="primerfila">
@@ -288,8 +291,11 @@ const Register = () => {
 									</select>
 								</div>
 							</div>
-							<button type='button' className='pets-button' onClick={savingPets}>Agregar</button>
 						</div>
+						<button type="button" className="pets-button" onClick={savingPets}>
+							Agregar mascota
+						</button>
+
 						<button
 							className="login-button ingresar"
 							onClick={handleRegisterUser}
