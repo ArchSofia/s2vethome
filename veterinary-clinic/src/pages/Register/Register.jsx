@@ -110,7 +110,7 @@ const Register = () => {
 					""
 				)}
 
-				<form>
+				<form className="form-register-ctn">
 					<div className="form-register">
 						<div className="user">
 							<div>

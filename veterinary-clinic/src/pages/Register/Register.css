@@ -44,7 +44,8 @@ h2{
     text-align: center;
 }
 
-form{
+.form-register-ctn{
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
