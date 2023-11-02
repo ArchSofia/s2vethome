@@ -45,7 +45,6 @@ h2{
 }
 
 form{
-    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
