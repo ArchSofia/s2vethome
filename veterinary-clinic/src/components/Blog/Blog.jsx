@@ -1,11 +1,8 @@
 import React from "react";
 import "../Blog/Blog.css";
-// import form from "../../assets//FORM.png";
 import { useState } from "react";
-// import linkmail from "/Users/sofiadiazvaldez/Documents/PROJECTS/vethome/vethome/veterinary-clinic/src/assets/24/symbols/at-sign.png";
-// import linkinsta from "/Users/sofiadiazvaldez/Documents/PROJECTS/vethome/vethome/veterinary-clinic/src/assets/24/symbols/instagram.png";
 import emailjs from "@emailjs/browser";
-// import botonform from "/Users/sofiadiazvaldez/Documents/PROJECTS/vethome/vethome/veterinary-clinic/src/assets/botonform.png";
+
 const Blog = () => {
 	const [formData, setFormData] = useState({
 		name: "",

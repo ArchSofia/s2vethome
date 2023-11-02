@@ -182,6 +182,7 @@ const Reservation = () => {
           html: "Para realizar una reserva, <b>todos los campos del formulario deben estar completos</b>",
           confirmButtonText: "Ok",
           showConfirmButton: true,
+          iconColor: '#831742',
           confirmButtonColor: '#831742'
         })
       }

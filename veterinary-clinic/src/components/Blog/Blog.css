@@ -489,7 +489,11 @@ input {
     .sector-1-contacto-a-email,
     .sector-1-contacto-a-telefono,
     .sector-1-contacto-a,
-    .text-5-1{
+    .text-5-1 {
+        width: 50px;
+    }
+
+    .sector-1-contacto-a-email .text-5-2{
         width: 50%;
     }
 
