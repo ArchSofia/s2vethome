@@ -38,7 +38,6 @@ const Navbar = () => {
 					<IoMdClose />
 				</div>
 				<ul className={sidebarOpen ? "sidebar-list" : "menu-list"}>
-					{/* TODO - click on home te sube a inicio de la página */}
 						{
 							isUserLogged &&
 							<button className='info-button'><Link to="/reservation">Reservar una cita</Link></button>

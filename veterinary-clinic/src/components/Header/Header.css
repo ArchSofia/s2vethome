@@ -58,10 +58,10 @@ hr{
     position: relative;
 }
 
-a {
+.logout-button a {
     text-decoration: none;
     color: whitesmoke;
-    font-size: 21px;
+    font-size: 1.2rem;
     font-family: 'Montserrat-VariableFont_wght';
     font-weight: 600;
     font-style: normal;
@@ -85,7 +85,7 @@ a {
 }
 
 
-.header-button, .logout-button{
+.header-button, .logout-button {
     width: 170px;
     padding: 1rem;
     border-radius: 11px;
@@ -97,7 +97,8 @@ a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 1.2rem;
+    font-weight: 600;
     font-family: 'Montserrat-VariableFont_wght', Helvetica;
     transition: all 0.2s ease;
     letter-spacing: 0.1px;
@@ -194,8 +195,12 @@ a {
         height: 390px;
     }
 
-    .header-button, .logout-button{
-        font-size: 1rem;
+    .header-button, .logout-button a{
+        font-size: 0.9rem;
+    }
+
+    .logout-button{
+        font-size: 0.9rem;
     }
 
     .header-text{
@@ -239,10 +244,6 @@ a {
         width: 90%;
         font-size: 0.9rem;
         text-align: center;
-    }
-
-    .header-button{
-        width: 30%;
     }
 
     .header-photos{

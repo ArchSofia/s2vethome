@@ -34,11 +34,12 @@
 
 .welcome-info{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .welcome-info h4{
   color:whitesmoke;
+  margin: 0 0.7rem;
 }
 
 .menu-list{
@@ -46,6 +47,12 @@
     list-style-type: none;
     gap: 1rem;
     color:whitesmoke;
+}
+
+.menu-list li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-list li:hover{
@@ -84,11 +91,20 @@ li a:hover{
 .info-button{
   background-color: #831742;
   padding: 0.5rem;
-  color: white;
   border-radius: 5px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
+}
+
+.info-button a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.sidebar-list .info-button{
+  margin: 0 0.5rem;
 }
 
 @media screen and (max-width: 768px){
