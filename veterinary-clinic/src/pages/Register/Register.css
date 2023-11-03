@@ -248,6 +248,28 @@ article{
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
+.ctn-error-pets{
+    margin: 3rem 0 0 0;
+    color: red;
+    font-weight: 600;
+}
+
+.text-error-pet{
+    color: red;
+    font-weight: 600;
+}
+
+.errorAge{
+    border: 1px solid red;
+}
+
+.error-message-age{
+    color: red;
+    font-weight: 400;
+    font-size: 0.6rem;
+}
+
+
 .input-field-6 {
     background-color: white;
     border: 1px solid;
@@ -277,7 +299,7 @@ article{
     padding: 8px 20px;
     display: flex;
     position: relative;
-    margin-top: 120px;  
+    margin-top: 60px;  
 }
 
 .primerfila{
