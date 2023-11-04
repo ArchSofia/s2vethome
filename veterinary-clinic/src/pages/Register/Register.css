@@ -1,12 +1,12 @@
 .ctn-register{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
-    /* max-height: calc(100vh - 117.8px); */
     min-height: 961px;
     background-color:#E5E8EB;
-    height: 1600px;
+    height: fit-content; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 h1.login-title{
@@ -45,7 +45,7 @@ h2{
 }
 
 .form-register-ctn{
-    height: 900px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -94,9 +94,9 @@ h2{
 }
 
 .form-register{
-    margin-top: 700px;
-    width: 571px;
-    height: auto;
+/*     margin-top: 700px;*/
+     width: 571px;
+    height: fit-content;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 20px;
@@ -414,16 +414,16 @@ article{
         margin-top: 60px;
     }
 
-    .form-register {
-        margin-top: 800px;}
+   /*  .form-register {
+        margin-top: 800px;} */
         
     .register-name{
         width: 85%;
     }
 
-    .ctn-register {
+    /* .ctn-register {
         height: 1750px;
-    }
+    } */
 
     .label .text-wrapper {
         

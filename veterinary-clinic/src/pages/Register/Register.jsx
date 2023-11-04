@@ -36,29 +36,28 @@ const Register = () => {
 	const [ageError, setAgeError] = useState("");
 	const [nameError, setNameError] = useState(false);
 
-
 	const goBack = () => {
 		navigate(-1);
 	};
 
 	const inputPetsChange = (event) => {
 		const { name, value } = event.target;
-		 if (name === 'age') {
+		if (name === "age") {
 			const age = parseInt(value, 10);
 			if (isNaN(age) || age < 0 || age > 25) {
-			  setAgeError(true);
+				setAgeError(true);
 			} else {
-			  setAgeError(false);
+				setAgeError(false);
 			}
-		  }
-		  if (name === 'petName') {
-			if (/^[A-Za-z]+$/.test(value) || value === '') {
-			  setNameError(false);
+		}
+		if (name === "petName") {
+			if (/^[A-Za-z]+$/.test(value) || value === "") {
+				setNameError(false);
 			} else {
-			  setNameError(true);
-			  return; 
+				setNameError(true);
+				return;
 			}
-		  }
+		}
 		setPet((prevPet) => ({
 			...prevPet,
 			[name]: value,
@@ -67,18 +66,24 @@ const Register = () => {
 
 	const savingPets = (event) => {
 		event.preventDefault();
-		if(pet.petName && pet.age && pet.gender !== "default" && pet.petSpecies !== "default" && ageError === false && nameError === false){
-			setErrorPets(false)
-			setAgeError(false)
-			setNameError(false)
-			setIncompleteInputError(false)
+		if (
+			pet.petName &&
+			pet.age &&
+			pet.gender !== "default" &&
+			pet.petSpecies !== "default" &&
+			ageError === false &&
+			nameError === false
+		) {
+			setErrorPets(false);
+			setAgeError(false);
+			setNameError(false);
+			setIncompleteInputError(false);
 			setPetsArray([...petsArray, pet]);
 		} else {
-			setErrorPets(true)
+			setErrorPets(true);
 		}
 		setPet({ petName: "", age: "", gender: "default", petSpecies: "default" });
 	};
-
 
 	const deletePet = (index) => {
 		let newPetsArray = petsArray.filter((_, i) => i !== index);
@@ -114,8 +119,10 @@ const Register = () => {
 				})
 				.catch((error) => {
 					setError(true);
-					setErrorRegisterMsj("Debes agregar al menos a 1 mascota para completar tu registro");
-				  });
+					setErrorRegisterMsj(
+						"Debes agregar al menos a 1 mascota para completar tu registro"
+					);
+				});
 		} else {
 			setError(true);
 			setErrorRegisterMsj("Debes completar todos los campos del formulario");
@@ -266,23 +273,32 @@ const Register = () => {
 											</div>
 										);
 									})}
-									{
-										errorPets && <div className="ctn-error-pets">
-											<p className="text-error-pet">Para agregar a una mascota, todos los campos deben estar completos</p>
-										</div>
-									}
-									{
-										ageError && <div className="ctn-error-pets">
-											<p className="text-error-pet">La edad de la mascota debe ser un número entre 0 y 25</p>
-										</div>
-									}
-									{nameError && <p className="ctn-error-pets">El campo nombre solo debe contener letras</p>}
+								{errorPets && (
+									<div className="ctn-error-pets">
+										<p className="text-error-pet">
+											Para agregar a una mascota, todos los campos deben estar
+											completos
+										</p>
+									</div>
+								)}
+								{ageError && (
+									<div className="ctn-error-pets">
+										<p className="text-error-pet">
+											La edad de la mascota debe ser un número entre 0 y 25
+										</p>
+									</div>
+								)}
+								{nameError && (
+									<p className="ctn-error-pets">
+										El campo nombre solo debe contener letras
+									</p>
+								)}
 							</div>
 
 							<div className="primerfila">
 								<div class="input-field-67">
 									<input
-										className={`input-pet ${nameError ? 'errorName' : ''}`}
+										className={`input-pet ${nameError ? "errorName" : ""}`}
 										type="text"
 										name="petName"
 										value={pet.petName}
@@ -292,7 +308,7 @@ const Register = () => {
 								</div>
 								<div class="input-field-67">
 									<input
-										className={`input-pet ${ageError ? 'errorAge' : ''}`}
+										className={`input-pet ${ageError ? "errorAge" : ""}`}
 										type="number"
 										min={1}
 										max={25}
@@ -301,7 +317,9 @@ const Register = () => {
 										placeholder="Edad"
 										onChange={inputPetsChange}
 									></input>
-									{ageError && <p className="error-message-age">Número inválido</p>}
+									{ageError && (
+										<p className="error-message-age">Número inválido</p>
+									)}
 								</div>
 							</div>
 
@@ -341,11 +359,15 @@ const Register = () => {
 						>
 							Registrarme
 						</button>
-						<div className="reset-sign inicia">
-							¿Ya tienes una cuenta? Inicia sesión.
-						</div>
+						<div className="reset-sign inicia">¿Ya tienes una cuenta?</div>
 						<p>
-							<a href="/login">Inicia sesión</a>
+							<br />
+							<a
+								style={{ textDecoration: "none", color: "#831742" }}
+								href="/login"
+							>
+								Inicia sesión
+							</a>
 						</p>
 						<div className="logo-name">
 							<h1 className="logo-title logo-bottom">VET HOME</h1>
