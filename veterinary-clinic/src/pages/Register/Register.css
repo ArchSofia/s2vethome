@@ -66,12 +66,22 @@ h2{
     flex-direction: column;
     align-items: center;
     align-content: center;
+    padding-top: 3rem;
     /* gap: 65px; */
+}
+
+.addedpetsector{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
 .label {
     height: 35px;
     width: 466px;
+    margin-bottom: 30px;
 }
 
 .label .text-wrapper {
@@ -84,9 +94,10 @@ h2{
     line-height: 35.1px;
     text-align: center;
     top: 0;
+    
     /* width: 466px; */
-    margin-top: 65px;
-    padding-bottom: 65px;
+   /*  margin-top: 65px;
+    padding-bottom: 65px; */
 }
 
 .ingresar{
@@ -166,6 +177,7 @@ article{
 .register-pet-section{
     width: 100%;
     height: 12%;
+
 }
 
 .input-register-name, .input-register-lastname, .input-register-email, .input-register-passcode, .input-register-phone, .input-register-address{
@@ -249,24 +261,32 @@ article{
 }
 
 .ctn-error-pets{
-    margin: 3rem 0 0 0;
+    margin: 2rem 0 0 0;
     color: red;
     font-weight: 600;
+    
 }
 
 .text-error-pet{
     color: red;
     font-weight: 600;
+    width: fit-content;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .errorAge{
     border: 1px solid red;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .error-message-age{
     color: red;
     font-weight: 400;
     font-size: 0.6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 
@@ -283,7 +303,8 @@ article{
     padding: 8px 20px;
     display: flex;
     position: relative;
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-right: 1rem;
 }
 
 .input-field-67 {
@@ -299,7 +320,8 @@ article{
     padding: 8px 20px;
     display: flex;
     position: relative;
-    margin-top: 60px;  
+    margin-top: 30px;  
+    margin-right: 1rem;
 }
 
 .primerfila{
@@ -333,9 +355,9 @@ article{
     .ctn-register {
         padding: 20px;
     }
-    .input-field-5, .input-field-6, .input-field-67 {
+    /* .input-field-5, .input-field-6, .input-field-67 {
         width: 90%;
-    }
+    } */
 }
 
 /* Dispositivos más pequeños como smartphones */
@@ -409,10 +431,7 @@ article{
         width: fit-content;
     }
 
-    .input-field-67 {
-        /* width: inherit; */
-        margin-top: 60px;
-    }
+    
 
    /*  .form-register {
         margin-top: 800px;} */
@@ -435,8 +454,8 @@ article{
         text-align: center;
         top: 0;
         
-        margin-top: 65px;
-        padding-bottom: 65px;
+        /* margin-top: 65px;
+        padding-bottom: 65px; */
         text-wrap: wrap;
         max-width: 310px;
     }
@@ -462,12 +481,10 @@ article{
 
     .petssector{
         width: 310px;
+        padding-top: 3rem;
     }
 }
 
-/* ... (tu código anterior) ... */
-
-/* Media Queries para mejorar la responsividad */
 
 
 

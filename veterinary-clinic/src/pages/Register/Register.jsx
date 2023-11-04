@@ -258,9 +258,24 @@ const Register = () => {
 							<div className="label">
 								<p className="text-wrapper">Agregá los datos de tu mascota</p>
 							</div>
-							<br />
-							<br />
-							<div>
+
+							<div className="addedpetsector">
+								{/* <div className="added-pet">
+									{" "}
+									Perrito
+									<RiDeleteBin6Line />
+								</div>
+								<div className="added-pet">
+									{" "}
+									Perrito
+									<RiDeleteBin6Line />
+								</div>
+								<div className="added-pet">
+									{" "}
+									Perrito
+									<RiDeleteBin6Line />
+								</div> */}
+
 								{petsArray &&
 									petsArray.map((p, index) => {
 										return (
