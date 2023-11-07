@@ -67,7 +67,11 @@ const Blog = () => {
 							<div class="sector-1-contacto-a">
 								<div class="sector-1-contacto-a-telefono">
 									<img class="icono-telefono" src="src/assets/phonecall.svg" />
-									<div class="text-5-1">+012 345 6789</div>
+									<div class="text-5-1"> 0230 - 4261204</div>
+								</div>
+								<div class="sector-1-contacto-a-telefono">
+									<img class="icono-telefono" src="src/assets/phonecall.svg" />
+									<div class="text-5-1"> +11-5098-7171</div>
 								</div>
 								<div class="sector-1-contacto-a-email">
 									<img
@@ -76,19 +80,44 @@ const Blog = () => {
 									/>
 									<div class="text-5-2">info@vethome.com.ar</div>
 								</div>
+								<div class="sector-1-contacto-a-telefono">
+									<img class="icono-telefono" src="src/assets/phonecall.svg" />
+									<div class="text-5-1">
+										<a
+											style={{ /* textDecoration: "none", */ color: "#000000" }}
+											href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Vet+Home/@-34.4491649,-58.8973646,17z/data=!3m1!4b1!4m6!3m5!1s0x95bc9d8915dc4981:0x43eebfe846e204e1!8m2!3d-34.4491649!4d-58.8973646!16s%2Fg%2F11l1dbl66y?hl=es-AR&entry=ttu"
+											target="_blank"
+										>
+											Av. 12 de Octubre 1056
+										</a>
+									</div>
+								</div>
 							</div>
 							<div class="sector-1-contacto-b">
 								<div class="conectate-con-nosotros">Conectate con nosotros</div>
-								<div class="social-links-1">
-									<a
-										href="https://www.instagram.com/vethome.pilar/"
-										target="_blank"
-									>
-										<img
-											class="social-icons-1"
-											src="src/assets/social-icons.svg"
-										/>
-									</a>
+								<div className="s-l-1">
+									<div class="social-links-1">
+										<a
+											href="https://www.instagram.com/vethome.pilar/"
+											target="_blank"
+										>
+											<img
+												class="social-icons-1"
+												src="src/assets/social-icons.svg"
+											/>
+										</a>
+									</div>
+									<div class="social-links-1">
+										<a
+											href="https://m.facebook.com/vet.home.pilar.clinica.veterinaria"
+											target="_blank"
+										>
+											<img
+												class="social-icons-1"
+												src="src/assets/social-icons.svg"
+											/>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>

@@ -21,8 +21,13 @@ const Header = () => {
 					<hr />
 					<span> Clínica Veterinaria</span>
 				</div>
-				<h1>Tu familia es importante para nosotros</h1>
-				<h3>Comprometidos con el bienestar de tus mascotas en cada etapa.</h3>
+				<h1>
+					Sabemos cuánto <br /> los querés
+				</h1>
+				<h3>
+					Estamos comprometidos en proteger la salud de tu mascota en cada etapa
+					de su vida
+				</h3>
 				{isUserLogged ? (
 					<button className="logout-button" onClick={handleLogout}>
 						Cerrar sesión

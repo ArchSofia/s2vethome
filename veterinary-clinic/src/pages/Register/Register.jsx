@@ -346,9 +346,11 @@ const Register = () => {
 										name="gender"
 										onChange={inputPetsChange}
 									>
-										<option value="default">Género</option>
-										<option>Masculino</option>
-										<option>Femenino</option>
+										<option value="default">Sexo</option>
+										<option>Macho</option>
+										<option>Hembra</option>
+										<option>Macho castrado</option>
+										<option>Hembra castrada</option>
 									</select>
 
 									<select

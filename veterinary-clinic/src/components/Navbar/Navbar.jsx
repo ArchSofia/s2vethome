@@ -1,15 +1,16 @@
-import React, {  useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "../Navbar/Navbar.css";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { useNavigate, useLocation } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
 	const navigate = useNavigate();
 	const [sidebarOpen, setSidebarOpen] = useState(false);
-	const {isUserLogged} = useContext(UserContext)
+	const { isUserLogged } = useContext(UserContext);
 	const [hideMenu, setHideMenu] = useState(false);
 
 	const location = useLocation();
@@ -21,24 +22,29 @@ const Navbar = () => {
 
 	useEffect(() => {
 		if (isReservationRoute) {
-		  setHideMenu(true);
+			setHideMenu(true);
 		} else {
-		  setHideMenu(false);
+			setHideMenu(false);
 		}
-	  }, [isReservationRoute]);
+	}, [isReservationRoute]);
 
 	return (
 		<div className="navbar" id="home">
 			<div className="welcome-info">
 				<div className="logo-name">
+					<img src={logo} className="logo" alt="logo" />
+
 					<h1 className="logo-title" onClick={goHome}>
 						VET HOME
 					</h1>
 				</div>
-				{
-					isUserLogged ?
-					<h4>{`Hola, ${sessionStorage.getItem("name")} ${sessionStorage.getItem("lastname")}`}</h4> : ""
-				}
+				{isUserLogged ? (
+					<h4>{`Hola, ${sessionStorage.getItem(
+						"name"
+					)} ${sessionStorage.getItem("lastname")}`}</h4>
+				) : (
+					""
+				)}
 			</div>
 			<div className="icon-bars" onClick={() => setSidebarOpen(true)}>
 				<FaBars />
@@ -51,12 +57,12 @@ const Navbar = () => {
 				</div>
 				{hideMenu ? (
 					""
-					) : (
+				) : (
 					<ul className={sidebarOpen ? "sidebar-list" : "menu-list"}>
 						{isUserLogged && (
-						<button className="info-button">
-							<Link to="/reservation">Reservar una cita</Link>
-						</button>
+							<button className="info-button">
+								<Link to="/reservation">Reservar una cita</Link>
+							</button>
 						)}
 						<li>
 							<a href="#">Home</a>
@@ -74,7 +80,7 @@ const Navbar = () => {
 							<a href="#contact">Contacto</a>
 						</li>
 					</ul>
-					)}
+				)}
 			</div>
 		</div>
 	);

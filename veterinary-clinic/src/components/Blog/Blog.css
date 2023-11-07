@@ -247,6 +247,15 @@ input {
     overflow: hidden;
 }
 
+.s-l-1{
+    
+    align-items: center;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 16px;
+}
+
 .social-icons-1 {
     cursor: pointer;
     width: 32px;
