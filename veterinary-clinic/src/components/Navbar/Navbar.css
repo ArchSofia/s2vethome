@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgb(189, 193, 198);
+    /* background-color: rgb(189, 193, 198); */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -8,7 +8,7 @@
     padding: 32px 47px 32px 60px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 99;
 }
 
 .logo {
@@ -111,6 +111,12 @@ li a:hover{
   margin: 0 0.5rem;
 }
 
+@media screen and (max-width: 1930px){
+  .navbar{
+    background-color: transparent;
+  }
+}
+
 @media screen and (max-width: 768px){
     .navbar {
     display: flex;
@@ -175,3 +181,11 @@ li a:hover{
 }
 
 
+.navbar.scrolled {
+  background-color: rgba(189, 193, 198, 0.9); /* Cambia el color de fondo y la opacidad según tus necesidades */
+  transition: background-color 0.5s ease-in-out;
+}
+
+body.scrolled .content {
+  margin-top: 80px; /* Ajusta según la altura de tu navbar cuando está fijo */
+}

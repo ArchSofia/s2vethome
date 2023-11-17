@@ -1,21 +1,21 @@
 .ctn-header{
     background-color: var(--grey);
     width: 100%;
-    height: 35rem;
+    height: 50rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 3rem;
+    /* position: absolute; */
 }
 
 .header-text{
     display: flex;
     flex-direction: column;
     height: 480px;
-    width: 860px;
     justify-content: space-evenly;
     position: relative;
-    right: -150px;
+    right: 230px;
+    z-index: 2;
 }
 
 .job-title{
@@ -40,22 +40,28 @@ hr{
 .header-text h1{
     font-size: 4rem;
     width: 100%;
-    color: var(--white);
+    color: #7f7f7f;
     font-family: 'GothamRoundedBold';
     font-weight: 700;
 }
 
 .header-text h3{
     width: 70%;
-    color: var(--white);
+    color: #7f7f7f;
     font-weight: 400;
     font-family: 'GothamRoundedBook';
 }
 
 .header-photos{
-    width: 50%;
-    height: 100%;
-    position: relative;
+    width: 100%;
+    /* height: 100%;  */
+    position: absolute;
+    top: 0px;
+}
+
+.header-photos img{
+    width: 100%;
+    max-height: 910px;
 }
 
 .logout-button a {
@@ -68,13 +74,13 @@ hr{
   }
 
 .portrait{
-    object-fit: contain;
-    object-position: right;
-    height:120%;
-    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    /* position: absolute;
     top: -46px;
-    right: 200px;
-    
+    right: 200px;  */
 }
 
 .ctn-icons{
@@ -111,11 +117,12 @@ hr{
 
 @media screen and (max-width: 1849px){
     .portrait{
-        right: 40px;
+       height: 1120px;
+       object-fit: cover;
     }
 
     .header-text{
-        position: static;
+        /* position: static; */
         width: 800px;
     }
 }
@@ -127,14 +134,14 @@ hr{
         font-size: 3.5rem;
     }
 
-    .portrait{
+    /* .portrait{
         height: 469px;
         position: unset;
-    }
+    } */
 
-    .header-text{
-        right: -60px;
-    }
+    /* .header-text{
+        right: 150px;
+    } */
 }
 
 
