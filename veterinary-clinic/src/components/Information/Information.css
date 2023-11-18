@@ -2,8 +2,9 @@
     background-color: #e5e8eb;
     padding: 3rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 550px;
+    gap: 4rem;
 }
 
 .info-vet-image{
@@ -37,9 +38,9 @@
 }
 
 
-@media screen and (min-width: 800px) and (max-width: 1200px){
-    .info-vet-image{
-        width: 70%;
+@media screen and (max-width: 1200px){
+    .text-parrafo p{
+        width: 100%
     }
 
     .info-description{
@@ -52,11 +53,10 @@
 }
 
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 877px){
     .ctn-information{
         flex-direction: column;
-        /* height: 80vh; */
-        height: 850px;
+        height: 1100px;
         padding: 2rem;
         align-items: center;
     }

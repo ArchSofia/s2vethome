@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* position: absolute; */
 }
 
 .header-text{
@@ -54,7 +53,6 @@ hr{
 
 .header-photos{
     width: 100%;
-    /* height: 100%;  */
     position: absolute;
     top: 0px;
 }
@@ -78,9 +76,6 @@ hr{
     height: 100%;
     overflow: hidden;
     width: 100%;
-    /* position: absolute;
-    top: -46px;
-    right: 200px;  */
 }
 
 .ctn-icons{
@@ -123,7 +118,7 @@ hr{
 
     .header-text{
         /* position: static; */
-        width: 800px;
+        /* width: 800px; */
     }
 }
 
@@ -133,159 +128,81 @@ hr{
     .header-text h1{
         font-size: 3.5rem;
     }
-
-    /* .portrait{
-        height: 469px;
-        position: unset;
-    } */
-
-    /* .header-text{
-        right: 150px;
-    } */
 }
 
 
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1385px){
+
     .ctn-header{
-        flex-direction: column;
-        height: 820px;
+        height: 30rem;
+    }
+
+    .portrait{
+        height: 600px;
     }
 
     .header-text{
-        width: 100%;
-        align-items: center;
-        height: 70%;
-        position: static;
-    }
-
-    hr{
-        display: none;
+        position: relative;
+        left: -80px;
+        top: -30px;
     }
 
     .header-text h1{
-        text-align: center;
-        font-size: 4rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .header-text{
+        left: 20px;
+        top: 0px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 807px){
+    .header-text {
+        width: 400px;
+        left: -140px;
+        top: -50px;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .header-text{
+        top: 0px;
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 673px){
+    .header-text{
+        top: 0px;
+        left: -50px;
+    }
+}
+
+@media screen and (max-width: 548px){
+    .header-text{
+        left: 0px;
+    }
+
+    .header-text h1{
+        color: white;
     }
 
     .header-text h3{
-        font-size: 1rem;
-        width: 95%;
-        text-align: center;
-        font-size: 0.8rem;
-    }
-
-    .header-photos{
-        width: 100%;
-        height: 70%;
-    }
-
-    .header-text h1{
-        font-size: 2rem; 
-    }
-
-    .portrait{
-        width: 90%;
-        object-fit: contain;
-        object-position: center;
-        position: static;
+        color: rgb(51, 51, 51);
     }
 }
 
-@media screen and (min-width: 792px) and (max-width: 1170.98px){
-    .portrait{
-        height: 550px;
-    }
-}
-
-@media screen and (max-width: 791px){
-    .portrait{
-        height: 390px;
-    }
-
-    .header-button, .logout-button a{
-        font-size: 0.9rem;
-    }
-
-    .logout-button{
-        font-size: 0.9rem;
-    }
-
-    .header-text{
-        height: 350px;
-    }
-
-    .header-photos{
-        height: 280px;
-        width: 100%;
-    }
-
-    a{
-        font-size: 0.9rem;
-    }
-    
-}
-
-@media screen and (min-width: 421px) and (max-width: 530px){
-    .header-text{
-        height: 380px;
-    }
-}
-
-@media screen and (max-width: 420px){
-    .ctn-header{
-        height: 700px;
-        padding: 0.7rem;
-    }
-
-    hr{
-        display: none;
-    }
-
-
-    .header-text h1{
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
-    .header-text h3{
-        width: 90%;
-        font-size: 0.9rem;
-        text-align: center;
-    }
-
-    .header-photos{
-        height: 300px;
-        width: 100%;
-    }
-
-    .portrait{
-        width: 100%;
-        object-fit: contain;
-        object-position: right;
-        position: absolute;
-        top: 6px;
-        right: 0%;
-    }
-
-    .header-button{
-        width: 50%;
-    }
-}
-
-@media screen and  (max-width: 300px){
-    .ctn-header{
-        padding: 0.8rem;
-    }
-    .header-text{
-        height: 350px;
-    }
-    .header-photos{
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .header-button{
-        width: 60%;
+@media screen and (max-width: 417px){
+    .header-text {
+        left: 0px;
+        width: 300px;
+        top: 15px;
     }
 }

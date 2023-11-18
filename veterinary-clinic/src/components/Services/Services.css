@@ -149,7 +149,6 @@
     .services-title{
         flex-direction: column;
         align-items: center;
-        height: 200px;
     }
 
     .services-title h1{
@@ -173,6 +172,10 @@
     .card{
         width: 90%;
     }
+
+    .services-title h1{
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -190,6 +193,7 @@
         height: 170px;
         align-items: center;
         margin-top: 2.2rem;
+        padding-top: 3rem;
     }
 
     .services-title h1{
