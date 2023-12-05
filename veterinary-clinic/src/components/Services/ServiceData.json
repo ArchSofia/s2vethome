@@ -3,31 +3,31 @@
     {
         "url": "/src/assets/radiologia.png",
         "title": "Radiología",
-        "description": "Imagen por rayos X para diagnóstico de patologías y lesiones"
+        "description": "Imágenes digitales de Rx de alta resolución"
     },
     {
         "url": "/src/assets/ecografia.png",
         "title": "Ecografía",
-        "description": "Diagnóstico de imágenes para visualizar los órganos y tejidos"
+        "description": "Servicio de ecografías y Ecodoppler color."
     },
     {
         "url": "/src/assets/uci.png",
-        "title": "Unidad de cuidados intensivos",
-        "description": "Internación y tratamiento"
+        "title": "Internación y urgencias",
+        "description": "Contamos con un servicio de cuidados críticos Diurno"
     },
     {
         "url": "/src/assets/cirugia.png",
         "title": "Cirugía",
-        "description": "Cirugías ambulatorias con los mejores profesionales"
+        "description": "Quirófano equipado con la última tecnología. Cirugía general y especializada"
     },
     {
         "url": "/src/assets/peluqueria.png",
-        "title": "Peluquería",
+        "title": "Spa",
         "description": "Servicios de peluquería y baño para tus mascotas"
     },
     {
         "url": "/src/assets/especialidades.png",
-        "title": "Especialidades",
-        "description": "Contamos con profesionales especializados"
+        "title": "Laboratorio",
+        "description": "Laboratorio de última tecnología con resultados en 7 minutos"
     }
 ]
