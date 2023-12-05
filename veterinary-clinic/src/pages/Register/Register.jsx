@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import { IoMdArrowRoundBack } from "react-icons/io";
 import { MdOutlineError } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import "./Register.css";
@@ -77,7 +76,10 @@ const Register = () => {
 			setErrorPets(false);
 			setAgeError(false);
 			setNameError(false);
+<<<<<<< HEAD
 			/* setIncompleteInputError(false); */
+=======
+>>>>>>> 75d184892673efdca6aff81e31510f86f1a7e1d2
 			setPetsArray([...petsArray, pet]);
 		} else {
 			setErrorPets(true);

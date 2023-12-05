@@ -1,6 +1,6 @@
 import React from "react";
 import "../Information/Information.css";
-import veterinarian from "../../assets/veterinarian-photo.png";
+import veterinarian from "../../assets/guada.jpg";
 
 const Information = () => {
 	return (
@@ -8,7 +8,7 @@ const Information = () => {
 			<img className="info-vet-image" src={veterinarian} />
 			<div className="info-description">
 				<h1 className="text-parrafo">
-					<div>Nuestra misión:</div>
+					<div>Nuestra misión</div>
 				</h1>
 				<p className="text-parrafo-p">
 					{" "}
@@ -16,9 +16,10 @@ const Information = () => {
 					integral, como así también productos para mascotas en la localidad de
 					Pilar, integrada por un equipo de profesionales en constante
 					formación, con el objetivo de brindar un servicio de excelencia y
-					tecnología de diagnóstico aplicada. Nuestra norte es trabajar bajo una
-					premisa: el trato humanitario hacia nuestros pacientes, generando y
-					transfiriendo valor hacia los tutores de mascotas.
+					tecnología de diagnóstico aplicada. <br />
+					Nuestra norte es trabajar bajo una premisa: el trato humanitario hacia
+					nuestros pacientes, generando y transfiriendo valor hacia los tutores
+					de mascotas.
 				</p>
 			</div>
 		</div>

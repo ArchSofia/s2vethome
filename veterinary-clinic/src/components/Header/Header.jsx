@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Header.css";
-import collie from "../../assets/photo-collie.png";
+import banner from "../../assets/banner.png";
 import { UserContext } from "../../context/UserContext";
 import { Link } from "react-router-dom";
 
@@ -16,6 +16,7 @@ const Header = () => {
 
 	return (
 		<div className="ctn-header">
+			
 			<div className="header-text">
 				<div className="job-title">
 					<hr />
@@ -37,12 +38,9 @@ const Header = () => {
 						Inicia sesión
 					</Link>
 				)}
-				{/* <div className="logout-button">
-					<a href="#contact">Contactanos</a>
-				</div> */}
 			</div>
 			<div className="header-photos">
-				<img src={collie} className="portrait" alt="photo" />
+				<img src={banner} className="portrait" alt="photo" />
 			</div>
 		</div>
 	);
