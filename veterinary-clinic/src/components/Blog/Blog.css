@@ -194,7 +194,8 @@ input {
         position: relative;
         width: 465px;
       }
- 
+
+ .icono-email, 
 .icono-telefono,
 .envelope-simple-5 {
   height: 24px;
@@ -258,8 +259,8 @@ input {
 
 .social-icons-1 {
     cursor: pointer;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     position: relative;
 }
 

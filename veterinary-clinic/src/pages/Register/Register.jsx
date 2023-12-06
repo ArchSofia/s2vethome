@@ -76,10 +76,7 @@ const Register = () => {
 			setErrorPets(false);
 			setAgeError(false);
 			setNameError(false);
-<<<<<<< HEAD
 			/* setIncompleteInputError(false); */
-=======
->>>>>>> 75d184892673efdca6aff81e31510f86f1a7e1d2
 			setPetsArray([...petsArray, pet]);
 		} else {
 			setErrorPets(true);

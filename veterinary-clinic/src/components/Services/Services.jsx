@@ -3,7 +3,6 @@ import "../Services/Services.css";
 import ServiceCard from "./ServiceCard";
 
 const Services = () => {
-<<<<<<< HEAD
 	return (
 		<div className="ctn-services" id="services">
 			<div className="services-title">
@@ -27,8 +26,7 @@ const Services = () => {
 		</div>
 	);
 };
-=======
-  return (
+/*   return (
     <div className='ctn-services' id='services'>
         <div className='services-title'>
             <h1>Brindamos un servicio veterinario integral</h1>
@@ -43,8 +41,8 @@ const Services = () => {
         </div>
       
     </div>
-  )
 }
->>>>>>> 75d184892673efdca6aff81e31510f86f1a7e1d2
+
+  ) */
 
 export default Services;

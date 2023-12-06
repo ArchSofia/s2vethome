@@ -66,7 +66,7 @@ const Blog = () => {
 						<div className="sector-1-contacto">
 							<div class="sector-1-contacto-a">
 								<div class="sector-1-contacto-a-telefono">
-									<img class="icono-telefono" src="src/assets/phonecall.svg" />
+									<img class="icono-telefono" src="src/assets/call-phone.png" />
 									<div class="text-5-1"> 0230 - 4261204</div>
 								</div>
 								<div class="sector-1-contacto-a-telefono">
@@ -74,10 +74,7 @@ const Blog = () => {
 									<div class="text-5-1"> +11-5098-7171</div>
 								</div>
 								<div class="sector-1-contacto-a-email">
-									<img
-										class="icono-email"
-										src="src/assets/envelopesimple-1.svg"
-									/>
+									<img class="icono-email" src="src/assets/mail.png" />
 									<div class="text-5-2">info@vethome.com.ar</div>
 								</div>
 								<div class="sector-1-contacto-a-telefono">
@@ -103,7 +100,7 @@ const Blog = () => {
 										>
 											<img
 												class="social-icons-1"
-												src="src/assets/social-icons.svg"
+												src="src/assets/instagram.png"
 											/>
 										</a>
 									</div>

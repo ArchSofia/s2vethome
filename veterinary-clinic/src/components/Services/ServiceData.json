@@ -8,19 +8,16 @@
     {
         "url": "/src/assets/ecografia.png",
         "title": "Ecografía",
-<<<<<<< HEAD
         "description": "Servicio de ecografías y Ecodoppler color."
     },
     {
         "url": "/src/assets/uci.png",
         "title": "Internación y urgencias",
-=======
         "description": "Servicio de ecografías y Ecodopple color"
     },
     {
         "url": "/src/assets/uci.png",
         "title": "Internación",
->>>>>>> 75d184892673efdca6aff81e31510f86f1a7e1d2
         "description": "Contamos con un servicio de cuidados críticos Diurno"
     },
     {
