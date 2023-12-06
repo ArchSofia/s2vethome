@@ -1,14 +1,14 @@
 [
     {
-        "image": "/src/assets/photovev.png",
-        "message": "Encuentro la mejor atención en VetHome y tengo todo en un mismo lugar: alimentos, baño y corte y atención 24hs de veterinarios en un solo lugar",
-        "name": "Vevis V.",
-        "info": "Dueña de Kibbi"
+        "image": "/src/assets/vev.png",
+        "message": "Muy conforme con la atención de la vete Florencia, me explicó todo con sumo detalle, las vacunaron, las pesaron y las mimaron mucho!",
+        "name": "Sabrina Britez",
+        "info": ""
     },
     {
-        "image": "/src/assets/photosilver.png",
-        "message": "Quiero agradecer a todo el equipo. Tuve que castar a mi gato Limón y salió de la cirugía sin ningún dolor. Hicimos un control semanas después y no pudo haber salido mejor",
-        "name": "Silver N.",
-        "info": "Dueño de Limón"
+        "image": "/src/assets/photosilver.jpeg",
+        "message": "Les recomiendo a todas las personas que conozco que traten a sus mascotas en vethome. Te tratan increíble y son muy profesionales. Me sentí segura dejándolo a mi perro y transformaron una experiencia estresante en un momento agradable",
+        "name": "Sofia Diaz Valdez",
+        "info": ""
     }
 ]
