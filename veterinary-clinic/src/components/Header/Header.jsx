@@ -16,7 +16,6 @@ const Header = () => {
 
 	return (
 		<div className="ctn-header">
-			
 			<div className="header-text">
 				<div className="job-title">
 					<hr />
@@ -38,6 +37,10 @@ const Header = () => {
 						Inicia sesión
 					</Link>
 				)}
+				<h5>
+					Si no tenes cuenta <br />
+					<Link to="/register">Registrate aquí</Link>
+				</h5>
 			</div>
 			<div className="header-photos">
 				<img src={banner} className="portrait" alt="photo" />

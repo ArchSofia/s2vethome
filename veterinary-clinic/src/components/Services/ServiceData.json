@@ -10,14 +10,10 @@
         "title": "Ecografía",
         "description": "Servicio de ecografías y Ecodoppler color."
     },
+    
     {
         "url": "/src/assets/uci.png",
         "title": "Internación y urgencias",
-        "description": "Servicio de ecografías y Ecodopple color"
-    },
-    {
-        "url": "/src/assets/uci.png",
-        "title": "Internación",
         "description": "Contamos con un servicio de cuidados críticos Diurno"
     },
     {
