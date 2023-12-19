@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Header.css";
-import banner from "../../assets/banner.png";
+import banner from "/assets/banner.png";
 import { UserContext } from "../../context/UserContext";
 import { Link } from "react-router-dom";
 

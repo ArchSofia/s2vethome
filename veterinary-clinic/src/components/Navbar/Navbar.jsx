@@ -5,7 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import { useNavigate, useLocation } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "/assets/logo.png";
 
 const Navbar = () => {
 	const navigate = useNavigate();
@@ -30,21 +30,20 @@ const Navbar = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-		  const navbar = document.querySelector('.navbar');
-		  if (navbar) {
-			if (window.scrollY > 50) {
-			  navbar.classList.add('scrolled');
-			} else {
-			  navbar.classList.remove('scrolled');
+			const navbar = document.querySelector(".navbar");
+			if (navbar) {
+				if (window.scrollY > 50) {
+					navbar.classList.add("scrolled");
+				} else {
+					navbar.classList.remove("scrolled");
+				}
 			}
-		  }
 		};
-		window.addEventListener('scroll', handleScroll);
+		window.addEventListener("scroll", handleScroll);
 		return () => {
-		  window.removeEventListener('scroll', handleScroll);
+			window.removeEventListener("scroll", handleScroll);
 		};
-	  }, []);
-	
+	}, []);
 
 	return (
 		<div className="navbar" id="home">

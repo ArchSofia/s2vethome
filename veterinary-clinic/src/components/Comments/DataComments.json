@@ -1,12 +1,12 @@
 [
     {
-        "image": "/src/assets/joan.jpg",
+        "image": "/assets/joan.jpg",
         "message": "Muy conforme con la atención de la vete Guadalupe, me explicó todo con sumo detalle, las vacunaron, las pesaron y las mimaron mucho!",
         "name": "Joan Ripoll",
         "info": ""
     },
     {
-        "image": "/src/assets/photosilver.jpeg",
+        "image": "/assets/photosilver.jpeg",
         "message": "Les recomiendo a todas las personas que conozco que traten a sus mascotas en vethome. Te tratan increíble y son muy profesionales. Me sentí segura dejándolo a mi perro y transformaron una experiencia estresante en un momento agradable",
         "name": "Sofia Diaz Valdez",
         "info": ""

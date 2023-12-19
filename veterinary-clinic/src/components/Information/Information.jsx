@@ -1,6 +1,6 @@
 import React from "react";
 import "../Information/Information.css";
-import veterinarian from "../../assets/guada.jpg";
+import veterinarian from "/assets/guada.jpg";
 
 const Information = () => {
 	return (

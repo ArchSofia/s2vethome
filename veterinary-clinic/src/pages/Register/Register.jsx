@@ -152,7 +152,7 @@ const Register = () => {
 											<div class="icon-3-1 icon-3">
 												<img
 													class="user-1"
-													src="src/assets/envelopesimple-1.svg"
+													src="/assets/envelopesimple-1.svg"
 												/>
 												<div class="divider-1"></div>
 											</div>
@@ -169,7 +169,7 @@ const Register = () => {
 
 										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
-												<img class="user-1" src="src/assets/user-1.svg" />
+												<img class="user-1" src="/assets/user-1.svg" />
 												<div class="divider-1"></div>
 											</div>
 											<input
@@ -185,7 +185,7 @@ const Register = () => {
 
 										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
-												<img class="user-1" src="src/assets/user-1.svg" />
+												<img class="user-1" src="/assets/user-1.svg" />
 												<div class="divider-1"></div>
 											</div>
 											<input
@@ -201,7 +201,7 @@ const Register = () => {
 
 										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
-												<img class="user-1" src="src/assets/phonecall.svg" />
+												<img class="user-1" src="/assets/phonecall.svg" />
 												<div class="divider-1"></div>
 											</div>
 											<input
@@ -219,7 +219,7 @@ const Register = () => {
 											<div class="icon-3-1 icon-3">
 												<img
 													class="user-1"
-													src="src/assets/envelopesimple-1.svg"
+													src="/assets/envelopesimple-1.svg"
 												/>
 												<div class="divider-1"></div>
 											</div>
@@ -236,7 +236,7 @@ const Register = () => {
 
 										<div class="input-field-5">
 											<div class="icon-3-1 icon-3">
-												<img class="user-1" src="src/assets/lock.svg" />
+												<img class="user-1" src="/assets/lock.svg" />
 												<div class="divider-1"></div>
 											</div>
 											<input

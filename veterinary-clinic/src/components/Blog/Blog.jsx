@@ -66,19 +66,19 @@ const Blog = () => {
 						<div className="sector-1-contacto">
 							<div class="sector-1-contacto-a">
 								<div class="sector-1-contacto-a-telefono">
-									<img class="icono-telefono" src="src/assets/call-phone.png" />
+									<img class="icono-telefono" src="/assets/call-phone.png" />
 									<div class="text-5-1"> 0230 - 4261204</div>
 								</div>
 								<div class="sector-1-contacto-a-telefono">
-									<img class="icono-telefono" src="src/assets/whatsapp.png" />
+									<img class="icono-telefono" src="/assets/whatsapp.png" />
 									<div class="text-5-1"> +11-5098-7171</div>
 								</div>
 								<div class="sector-1-contacto-a-email">
-									<img class="icono-email" src="src/assets/mail.png" />
+									<img class="icono-email" src="/assets/mail.png" />
 									<div class="text-5-2">info@vethome.com.ar</div>
 								</div>
 								<div class="sector-1-contacto-a-telefono">
-									<img class="icono-telefono" src="src/assets/location.png" />
+									<img class="icono-telefono" src="/assets/location.png" />
 									<div class="text-5-1">
 										<a
 											style={{ /* textDecoration: "none", */ color: "#000000" }}
@@ -98,10 +98,7 @@ const Blog = () => {
 											href="https://www.instagram.com/vethome.pilar/"
 											target="_blank"
 										>
-											<img
-												class="social-icons-1"
-												src="src/assets/instagram.png"
-											/>
+											<img class="social-icons-1" src="/assets/instagram.png" />
 										</a>
 									</div>
 									<div class="social-links-1">
@@ -109,10 +106,7 @@ const Blog = () => {
 											href="https://m.facebook.com/vet.home.pilar.clinica.veterinaria"
 											target="_blank"
 										>
-											<img
-												class="social-icons-1"
-												src="src/assets/facebook.png"
-											/>
+											<img class="social-icons-1" src="/assets/facebook.png" />
 										</a>
 									</div>
 								</div>
@@ -124,7 +118,7 @@ const Blog = () => {
 								<div class="input-fields">
 									<div class="input-field-2">
 										<div class="icon-3-1 ">
-											<img class="user-1" src="src/assets/user-1.svg" />
+											<img class="user-1" src="/assets/user-1.svg" />
 											<div class="divider-1"></div>
 										</div>
 										<input
@@ -139,10 +133,7 @@ const Blog = () => {
 									</div>
 									<div class="input-field-2">
 										<div class="icon-3-1 icon-3">
-											<img
-												class="user-1"
-												src="src/assets/envelopesimple-1.svg"
-											/>
+											<img class="user-1" src="/assets/envelopesimple-1.svg" />
 											<div class="divider-1"></div>
 										</div>
 										<input
@@ -157,7 +148,7 @@ const Blog = () => {
 									</div>
 									<div class="input-field-2">
 										<div class="icon-3-1 icon-3">
-											<img class="send" src="src/assets/phonecall.svg" />
+											<img class="send" src="/assets/phonecall.svg" />
 											<div class="divider-1"></div>
 										</div>
 										<input
@@ -172,7 +163,7 @@ const Blog = () => {
 									</div>
 									<div class="input-field-4">
 										<div class="icon-3-1 icon-3">
-											<img class="send" src="src/assets/send1.png" />
+											<img class="send" src="/assets/send1.png" />
 											<div class="divider-1"></div>
 										</div>
 										<textarea

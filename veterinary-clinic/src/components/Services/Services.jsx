@@ -15,7 +15,7 @@ const Services = () => {
 			<div className="ctn-services-info">
 				<ServiceCard />
 				<div className="card-pet-shop">
-					<img src="/src/assets/petshop.png" alt="petshop" />
+					<img src="/assets/petshop.png" alt="petshop" />
 					<h2 className="card-title">Pet Shop</h2>
 					<p className="card-description">
 						Alimentos súper Premium, Farmacia veterinaria y todo lo que necesita
@@ -34,7 +34,7 @@ const Services = () => {
         <div className='ctn-services-info'>
           <ServiceCard />
           <div className="card-pet-shop">
-            <img src="/src/assets/petshop.png" alt="petshop" />
+            <img src="/assets/petshop.png" alt="petshop" />
             <h2 className='card-title'>Pet Shop</h2>
             <p className='card-description'>Alimentos súper Premium, Farmacia veterinaria y todo lo que necesita tu mascota</p>
 			    </div>

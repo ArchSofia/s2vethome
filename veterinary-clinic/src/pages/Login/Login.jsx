@@ -38,7 +38,7 @@ const Login = () => {
 					if (response.status === 200 || response.status === 201) {
 						sessionStorage.setItem("token", response.data.token);
 						sessionStorage.setItem("email", email);
-						sessionStorage.setItem("isUserLogged", "true")
+						sessionStorage.setItem("isUserLogged", "true");
 						setIsUserLogged(true);
 						findUserByEmail(email);
 						navigate("/");
@@ -68,7 +68,7 @@ const Login = () => {
 
 						<div className="input-field-2">
 							<div className="icon-3-1 icon-3">
-								<img className="user-1" src="src/assets/envelopesimple-1.svg" />
+								<img className="user-1" src="/assets/envelopesimple-1.svg" />
 								<div className="divider-1"></div>
 							</div>
 							<input
@@ -84,7 +84,7 @@ const Login = () => {
 
 						<div className="input-field-2">
 							<div className="icon-3-1 icon-3">
-								<img className="user-1" src="src/assets/lock.svg" />
+								<img className="user-1" src="/assets/lock.svg" />
 								<div className="divider-1"></div>
 							</div>
 							<input
