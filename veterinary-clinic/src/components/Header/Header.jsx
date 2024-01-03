@@ -21,10 +21,10 @@ const Header = () => {
 					<hr />
 					<span> Clínica Veterinaria</span>
 				</div>
-				<h1>
+				<h1 style={{ color: "rgb(0, 0, 0)" }}>
 					Sabemos cuánto <br /> los querés
 				</h1>
-				<h3>
+				<h3 style={{ color: "rgb(0, 0, 0)" }}>
 					Estamos comprometidos en proteger la salud de tu mascota en cada etapa
 					de su vida
 				</h3>
@@ -37,9 +37,12 @@ const Header = () => {
 						Inicia sesión
 					</Link>
 				)}
-				<h5>
+				<h5 style={{ color: "#7f7f7f" }}>
 					Si no tenes cuenta <br />
-					<Link to="/register" style={{ textDecoration: "none" }}>
+					<Link
+						to="/register"
+						style={{ color: "#7f7f7f", textDecoration: "none" }}
+					>
 						Registrate aquí
 					</Link>
 				</h5>
