@@ -37,6 +37,14 @@ const Header = () => {
 						Inicia sesión
 					</Link>
 				)}
+
+				<div className="reset-sign">
+					<p className="reset">¿No tienes cuenta?</p>
+					<p className="sign-in">
+						<Link to="/register">Registrate</Link>
+					</p>
+				</div>
+
 				<h5 style={{ color: "#7f7f7f" }}>
 					Si no tenes cuenta <br />
 					<Link
