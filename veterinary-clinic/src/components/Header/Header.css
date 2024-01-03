@@ -39,9 +39,10 @@ hr{
 .header-text h1{
     font-size: 4rem;
     width: 100%;
-    color: #7f7f7f;
+    color: var(--white);
     font-family: 'GothamRoundedBold';
     font-weight: 700;
+    line-height: 3rem;
 }
 
 .reset-sign1{
@@ -59,7 +60,7 @@ hr{
 
 .header-text h3{
     width: 70%;
-    color: #7f7f7f;
+    color: var(--white);
     font-weight: 400;
     font-family: 'GothamRoundedBook';
 }
@@ -127,6 +128,7 @@ hr{
     .portrait{
        height: 1120px;
        object-fit: cover;
+       
     }
 
     /* .header-text{

@@ -21,10 +21,10 @@ const Header = () => {
 					<hr />
 					<span> Clínica Veterinaria</span>
 				</div>
-				<h1>
+				<h1 style={{ color: "whitesmoke" }}>
 					Sabemos cuánto <br /> los querés
 				</h1>
-				<h3>
+				<h3 style={{ color: "whitesmoke" }}>
 					Estamos comprometidos en proteger la salud de tu mascota en cada etapa
 					de su vida
 				</h3>
