@@ -41,7 +41,7 @@ const Header = () => {
 					Si no tenes cuenta <br />
 					<Link
 						to="/register"
-						style={{ color: "#7f7f7f", textDecoration: "none" }}
+						style={{ color: "rgb(0, 0, 0)", textDecoration: "none" }}
 					>
 						Registrate aquí
 					</Link>
