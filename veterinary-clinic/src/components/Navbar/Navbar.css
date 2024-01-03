@@ -75,9 +75,10 @@
 
 li a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
   font-family: 'Montserrat-VariableFont_wght';
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 hr {
@@ -111,11 +112,11 @@ li a:hover{
   margin: 0 0.5rem;
 }
 
-@media screen and (max-width: 1930px){
+/* @media screen and (max-width: 1930px){
   .navbar{
     background-color: transparent;
   }
-}
+} */
 
 @media screen and (max-width: 768px){
     .navbar {

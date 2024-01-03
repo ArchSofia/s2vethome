@@ -52,6 +52,11 @@ hr{
     flex-direction: column;
 }
 
+
+.reset2{
+    color: var(--white);
+}
+
 .header-text h3{
     width: 70%;
     color: #7f7f7f;
