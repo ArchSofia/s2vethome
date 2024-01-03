@@ -54,7 +54,7 @@ const Blog = () => {
 					<div className="header-form">
 						<div className="headline-subhead-5">
 							<div className="comunicate-con-nosotros-1">
-								Comunicate con Nosotros
+								<p>Comunicate con Nosotros</p>
 							</div>
 							<p className="tenes-alguna-duda-s-1 body-m">
 								¿Tenes alguna duda sobre nuestros servicios? Nuestro equipo está
