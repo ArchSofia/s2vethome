@@ -522,8 +522,8 @@ input {
     }
 
     .comunicate-con-nosotros-1 {
-        font-size: 1.5rem;
-        width: 180px;
+        font-size: 1.2rem;
+        max-width: 180px;
         text-wrap: wrap;
     }
 }
