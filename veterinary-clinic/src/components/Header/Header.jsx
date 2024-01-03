@@ -42,9 +42,9 @@ const Header = () => {
 					<Link to="/register">Registrate aquí</Link>
 				</h5>
 			</div>
-			<div className="header-photos">
+			{/* <div className="header-photos">
 				<img src={banner} className="portrait" alt="photo" />
-			</div>
+			</div> */}
 		</div>
 	);
 };
