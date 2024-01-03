@@ -39,7 +39,9 @@ const Header = () => {
 				)}
 				<h5>
 					Si no tenes cuenta <br />
-					<Link to="/register">Registrate aquí</Link>
+					<Link to="/register" style={{ textDecoration: "none" }}>
+						Registrate aquí
+					</Link>
 				</h5>
 			</div>
 			{/* <div className="header-photos">
