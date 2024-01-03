@@ -38,22 +38,12 @@ const Header = () => {
 					</Link>
 				)}
 
-				<div className="reset-sign">
+				<div className="reset-sign1">
 					<p className="reset">¿No tienes cuenta?</p>
 					<p className="sign-in">
-						<Link to="/register">Registrate</Link>
+						<Link to="/register">Registrate acá</Link>
 					</p>
 				</div>
-
-				<h5 style={{ color: "#7f7f7f" }}>
-					Si no tenes cuenta <br />
-					<Link
-						to="/register"
-						style={{ color: "rgb(0, 0, 0)", textDecoration: "none" }}
-					>
-						Registrate aquí
-					</Link>
-				</h5>
 			</div>
 			{/* <div className="header-photos">
 				<img src={banner} className="portrait" alt="photo" />

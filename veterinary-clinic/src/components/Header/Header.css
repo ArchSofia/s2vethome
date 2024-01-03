@@ -44,6 +44,14 @@ hr{
     font-weight: 700;
 }
 
+.reset-sign1{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 .header-text h3{
     width: 70%;
     color: #7f7f7f;
