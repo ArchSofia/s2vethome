@@ -521,7 +521,8 @@ input {
         padding: 0.8rem;
     }
 
-    .comunicate-con-nosotros-1 {
+    .comunicate-con-nosotros-1,
+    .conectate-con-nosotros {
         font-size: 1.2rem;
         max-width: 180px;
         text-wrap: wrap;
