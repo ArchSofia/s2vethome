@@ -15,6 +15,7 @@
     position: relative;
     right: 230px;
     z-index: 2;
+    gap: 2rem;
 }
 
 .job-title{
