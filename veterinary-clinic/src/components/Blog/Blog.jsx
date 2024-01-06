@@ -30,10 +30,10 @@ const Blog = () => {
 
 		emailjs
 			.send(
-				"service_lexxqx5",
-				"template_kooy0wx",
+				"service_08ooand",
+				"template_r5tis5j",
 				emailParams,
-				"c7tBtIo6MVCXOcHun"
+				"VPGoga_SVIiuwiJ-7"
 			)
 			.then(
 				(response) => {
