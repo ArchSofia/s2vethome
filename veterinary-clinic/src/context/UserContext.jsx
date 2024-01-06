@@ -30,7 +30,9 @@ export const UserProvider = ({ children }) => {
 
 	const findUserByEmail = (email) => {
 		axios
-			.get(`http://vethomeback.azurewebsites.net/customer/findByEmail/${email}`)
+			.get(
+				`https://vethomeback.azurewebsites.net/customer/findByEmail/${email}`
+			)
 			.then((response) => {
 				setUserLogged(response.data);
 				sessionStorage.setItem("name", response.data.name);

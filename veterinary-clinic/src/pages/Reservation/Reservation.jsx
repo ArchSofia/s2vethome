@@ -123,7 +123,7 @@ const Reservation = () => {
 		if (idVet) {
 			axios
 				.get(
-					`http://vethomeback.azurewebsites.net/vet/getOccupiedTime/${idVet}`
+					`https://vethomeback.azurewebsites.net/vet/getOccupiedTime/${idVet}`
 				)
 				.then((response) => {
 					const reservations = response.data;
@@ -162,7 +162,7 @@ const Reservation = () => {
 		) {
 			axios
 				.post(
-					"http://vethomeback.azurewebsites.net/appointment/create",
+					"https://vethomeback.azurewebsites.net/appointment/create",
 					requestData,
 					config
 				)
@@ -210,7 +210,7 @@ const Reservation = () => {
 
 	useEffect(() => {
 		axios
-			.get("http://vethomeback.azurewebsites.net/vet/list")
+			.get("https://vethomeback.azurewebsites.net/vet/list")
 			.then((response) => {
 				setVetList(response.data);
 			});

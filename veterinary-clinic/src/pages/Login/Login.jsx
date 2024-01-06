@@ -29,7 +29,7 @@ const Login = () => {
 		e.preventDefault();
 		if (email && password) {
 			axios
-				.post("http://vethomeback.azurewebsites.net/login", {
+				.post("https://vethomeback.azurewebsites.net/login", {
 					email,
 					password,
 				})
