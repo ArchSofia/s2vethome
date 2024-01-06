@@ -94,7 +94,7 @@ const Register = () => {
 		if (name && lastname && address && phone && email && password) {
 			setError(false);
 			axios
-				.post("http://vethomeback.azurewebsites.net/customer/addCustomer", {
+				.post("https://vethomeback.azurewebsites.net/customer/addCustomer", {
 					name: name,
 					lastName: lastname,
 					address: address,
