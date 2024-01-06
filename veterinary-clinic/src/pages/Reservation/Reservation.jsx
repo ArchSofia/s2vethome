@@ -282,6 +282,7 @@ const Reservation = () => {
 									<option value={1} disabled>
 										Selecciona un veterinario
 									</option>
+
 									{vetList?.map((vet) => (
 										<option key={vet.id} value={vet.id}>
 											{vet.name}, {vet.surname}
