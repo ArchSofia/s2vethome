@@ -65,7 +65,7 @@ input {
     background:none;
     cursor: initial;
     padding: 1rem;
-    max-width: 40rem;}
+    width: 100%;}
 
 .name-inputt{
     position: relative;
