@@ -25,7 +25,13 @@ select{
 }
 
 input {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(rgb(225, 225, 225), rgba(70, 90, 126, 0.4)) !important;
+  color: fieldtext !important;
+}
 
